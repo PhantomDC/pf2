@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="css/app.css">
+
+    <style>
+        body {
+            /*-webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;*/
+        }
+
+        @media screen and (max-width: 500px) {
+            body {
+                font-size: .92rem;
+            }
+        }
+
+        select.pf {
+            width: auto;
+            border: 1px solid #ddd;
+            padding-top: 0;
+            padding-bottom: 0.2rem;
+            font-size: 0.85rem;
+            height: 1.7rem !important;
+        }
+
+        tbody th {
+            max-width: 50%;
+            min-width: 250px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="card card-block">
+        <nav class="nav nav-inline">
+            <a class="nav-link active" href="#">Все запросы</a>
+            <a class="nav-link" href="#">Мои запросы</a>
+            <a class="nav-link" href="#">Мои ответы</a>
+            <a class="nav-link" href="#">Избранное</a>
+            <a class="nav-link float-xs-right" href="#">Архив</a>
+        </nav>
+    </div>
+
+
+    <div class="card">
+        <table class="table table-responsive">
+            <thead>
+            <tr>
+                <th class="small">
+                    <form>
+                        <select class="form-control pf" id="x1">
+                            <option selected>Запросы из всех отраслей</option>
+                            <option disabled>Выберите отрасль:</option>
+                            <option>IT</option>
+                            <option>Нефтедобыча</option>
+                        </select>
+                    </form>
+                </th>
+                <th class="small">
+                    <form>
+                        <select class="form-control pf" id="x2">
+                            <option selected>Все города</option>
+                            <option>Москва</option>
+                            <option>Комсомольск-на-Амуре</option>
+                        </select>
+                    </form>
+                </th>
+                <th class="small">Ответов</th>
+                <th class="small">Принятых</th>
+                <th class="small">Дедлайн</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">
+                    <div class="media">
+                        <a class="media-left float-xs-none" href="#">
+                            <img class="media-object rounded-circle" src="img/avatar.png" width="35px">
+                        </a>
+                        <div class="media-body">
+                            <p class="media-heading"><a href="#">Рынок настольных игр</a></p>
+                            <div class="text-muted">Компания</div>
+                        </div>
+                    </div>
+
+
+                </th>
+                <td>Москва</td>
+                <td>34</td>
+                <td>3</td>
+                <td>4 часа</td>
+            </tr>
+            <tr>
+                <th scope="row">
+                    <a href="#">Суровая зима для бюджета</a>
+                    <div class="text-muted">Компания</div>
+                </th>
+                <td>Москва</td>
+                <td>2</td>
+                <td>0</td>
+                <td>2 дня</td>
+            </tr>
+            <tr>
+                <th scope="row">
+                    <a href="#">Фитнес-клубы - какие новые форматы востребованы на рынке?</a>
+                    <div class="text-muted">Компания</div>
+                </th>
+                <td>Комсомольск-на-Амуре</td>
+                <td>5</td>
+                <td><img src="img/del-active-icon.svg"></td>
+                <td>10 дней</td>
+            </tr>
+            <tr>
+                <th scope="row">
+                    <a href="#">Для программы про избавление от ненужных вещей ищем героя (блогера), который
+                        реализует
+                        одежду и другие вещи через приложения</a>
+                    <div class="text-muted">Анонимный запрос. Топ-медиа</div>
+                </th>
+                <td>Москва</td>
+                <td>9</td>
+                <td>1</td>
+                <td>1 час</td>
+            </tr>
+            <tr>
+                <th scope="row">
+                    <a href="#">хеджирование валютных рисков экспортеров и импортеров</a>
+                    <div class="text-muted">РБК (СПб и ЛО)</div>
+                </th>
+                <td>Петербург</td>
+                <td>345</td>
+                <td>34</td>
+                <td>7 часов</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+</div>
+
+
+<script src="js/app.js"></script>
+
+</body>
+
+</html>
