@@ -5,60 +5,134 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
 
     <!--build:css css/app.css -->
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/app.css">
     <!--endbuild-->
-
-    <style>
-        body {
-            /*-webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;*/
-        }
-
-        @media screen and (max-width: 500px) {
-            body {
-                font-size: .92rem;
-            }
-        }
-
-        select.pf {
-            width: auto;
-            border: 1px solid #ddd;
-            padding-top: 0;
-            padding-bottom: 0.2rem;
-            font-size: 0.85rem;
-            height: 1.7rem !important;
-        }
-
-        tbody th {
-            max-width: 50%;
-            min-width: 250px;
-        }
-    </style>
 
 </head>
 
 <body>
 
+<!-- Header .main-navbar -->
+<nav class="navbar navbar-main navbar-fixed-top navbar-dark bg-inverse">
+
+    <div class="container px-0 relative">
+
+        <!-- Logo + main menu -->
+        <div class="nav nav-inline navbar-nav float-lg-left navbar-main-menu">
+            <button class="hidden-lg-up nav-link btn btn-sm btn-outline-secondary" type="button"
+                    data-toggle="collapse"
+                    data-target="#navbar-main-menu"><i class="material-icons">menu</i>
+            </button>
+            <div class="collapse navbar-toggleable-md" id="navbar-main-menu">
+                <a class="nav-link nav-item mr-3 font-weight-bold hidden-md-down" href="#">pressfeed</a>
+                <a class="nav-link nav-item active" href="#">Запросы</a>
+                <a class="nav-link nav-item" href="#">Релизы</a>
+                <a class="nav-link nav-item" href="#">Журналисты и эксперты</a>
+                <a class="nav-link nav-item" href="#">Контакты</a>
+            </div>
+        </div>
+
+        <!-- Indicators -->
+        <div class="nav-inline navbar-nav float-lg-right navbar-indicators">
+
+            <!-- Corporate notifier -->
+            <div class="nav-item nav-link dropdown">
+                <a href="#" class="dropdown-toggle no-caret text-white" data-toggle="dropdown">
+                    <i class="material-icons">fiber_manual_record</i>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <div class="dropdown-item text-muted">Уведомления для корпоративных
+                        аккаунтов<br><br><br><br><br><br></div>
+                </div>
+            </div>
+
+            <!-- Messages notifier -->
+            <div class="nav-item nav-link dropdown">
+                <a href="#" class="dropdown-toggle no-caret text-white relative" data-toggle="dropdown">
+                    <i class="material-icons align-text-top">forum</i>
+                    <span class="tag-primary tag tag-oval">4</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <div class="dropdown-item text-muted">Уведомления о сообщениях<br><br><br><br><br><br></div>
+                </div>
+            </div>
+
+            <!-- Events notifier -->
+            <div class="nav-item nav-link dropdown">
+                <a href="#" class="dropdown-toggle no-caret text-white" data-toggle="dropdown">
+                    <i class="material-icons">notifications</i>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <div class="dropdown-item text-muted">Уведомления о событиях<br><br><br><br><br><br></div>
+                </div>
+            </div>
+
+            <!-- My stuff -->
+            <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle p-0" href="#" id="my"
+                   data-toggle="dropdown">
+                    <img class="img-fluid img-circle border-2 border-white" width="40" height="40"
+                         src="img/avatar-test.png">
+                </a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item font-weight-bold pb-0" href="#">
+                        Мария Андреева
+                    </a>
+                    <div class="dropdown-item text-muted py-0">Эксперт</div>
+
+                    <div class="dropdown-item small text-muted pt-0">Про-аккаунт до 5.01.2017</div>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Настройка профиля</a>
+                    <a class="dropdown-item" href="#">Настройка аккаунта</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">
+                        <i class="material-icons">exit_to_app</i>
+                        Выход</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+
 <div class="container">
 
-    <div class="card card-block">
-        <nav class="nav nav-inline">
-            <a class="nav-link active" href="#">Все запросы</a>
+
+    <div class="card mb-2">
+
+
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Запросы</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Ответы</a>
+            </li>
+            <li class="nav-item float-xs-right">
+                <a class="nav-link" href="#">Архив</a>
+            </li>
+        </ul>
+
+        <nav class="nav nav-inline p-half">
+            <a class="nav-link active" href="#">Все</a>
             <a class="nav-link" href="#">Мои запросы</a>
-            <a class="nav-link" href="#">Мои ответы</a>
-            <a class="nav-link" href="#">Избранное</a>
-            <a class="nav-link float-xs-right" href="#">Архив</a>
+            <a class="nav-link" href="#"><i class="material-icons material-icons-inherit">star</i>&nbsp;Избранное</a>
         </nav>
+
     </div>
 
 
     <div class="card">
-        <table class="table table-responsive">
+        <table class="table table-responsive table-main">
             <thead>
             <tr>
-                <th class="small">
+                <td></td>
+                <td class="small">
                     <form>
                         <select class="form-control pf" id="x1">
                             <option selected>Запросы из всех отраслей</option>
@@ -67,8 +141,8 @@
                             <option>Нефтедобыча</option>
                         </select>
                     </form>
-                </th>
-                <th class="small">
+                </td>
+                <td class="small">
                     <form>
                         <select class="form-control pf" id="x2">
                             <option selected>Все города</option>
@@ -76,69 +150,97 @@
                             <option>Комсомольск-на-Амуре</option>
                         </select>
                     </form>
-                </th>
-                <th class="small">Ответов</th>
-                <th class="small">Принятых</th>
-                <th class="small">Дедлайн</th>
+                </td>
+                <td class="small">Ответов</td>
+                <td class="small">Принятых</td>
+                <td class="small">Дедлайн</td>
             </tr>
             </thead>
             <tbody>
             <tr>
-                <th scope="row">
+                <td><a href="#"><i class="material-icons">star_border</i></a></td>
+                <td scope="row">
                     <div class="media">
                         <a class="media-left float-xs-none" href="#">
-                            <img class="media-object rounded-circle" src="img/avatar.png" width="35px">
+                            <img class="media-object rounded-circle" src="img/avatar-test5.png" width="50" height="50">
                         </a>
                         <div class="media-body">
-                            <p class="media-heading"><a href="#">Рынок настольных игр</a></p>
-                            <div class="text-muted">Компания</div>
+                            <p class="media-heading mb-0"><a href="#" class="font-weight-sbold">Что делать, если вам
+                                настойчиво предлагают продать компанию, а вы не хотите?</a></p>
+                            <div>Секрет фирмы</div>
                         </div>
                     </div>
 
 
-                </th>
+                </td>
                 <td>Москва</td>
                 <td>34</td>
                 <td>3</td>
                 <td>4 часа</td>
             </tr>
             <tr>
-                <th scope="row">
-                    <a href="#">Суровая зима для бюджета</a>
-                    <div class="text-muted">Компания</div>
-                </th>
+                <td><a href="#"><i class="material-icons">star_border</i></a></td>
+                <td scope="row">
+                    <div class="media">
+                        <a class="media-left float-xs-none" href="#">
+                            <img class="media-object rounded-circle" src="img/avatar-test.png" width="50" height="50">
+                        </a>
+                        <div class="media-body">
+                            <p class="media-heading mb-0"><a href="#" class="font-weight-sbold">Рынок
+                                настольных игр</a></p>
+                            <div>Компания</div>
+                        </div>
+                    </div>
+
+
+                </td>
+                <td>Москва</td>
+                <td>34</td>
+                <td>3</td>
+                <td>4 часа</td>
+            </tr>
+            <tr>
+                <td><a href="#"><i class="material-icons">star_border</i></a></td>
+                <td scope="row">
+                    <a href="#" class="font-weight-sbold">Суровая зима для бюджета</a>
+                    <div>Компания</div>
+                </td>
                 <td>Москва</td>
                 <td>2</td>
                 <td>0</td>
                 <td>2 дня</td>
             </tr>
             <tr>
-                <th scope="row">
-                    <a href="#">Фитнес-клубы - какие новые форматы востребованы на рынке?</a>
-                    <div class="text-muted">Компания</div>
-                </th>
+                <td><a href="#"><i class="material-icons">star_border</i></a></td>
+                <td scope="row">
+                    <a href="#" class="font-weight-sbold">Фитнес-клубы - какие новые форматы востребованы на
+                        рынке?</a>
+                    <div>Компания</div>
+                </td>
                 <td>Комсомольск-на-Амуре</td>
                 <td>5</td>
-                <td><img src="img/del-active-icon.svg"></td>
+                <td>9</td>
                 <td>10 дней</td>
             </tr>
             <tr>
-                <th scope="row">
+                <td><a href="#"><i class="material-icons">star_border</i></a></td>
+                <td scope="row">
                     <a href="#">Для программы про избавление от ненужных вещей ищем героя (блогера), который
                         реализует
                         одежду и другие вещи через приложения</a>
-                    <div class="text-muted">Анонимный запрос. Топ-медиа</div>
-                </th>
+                    <div>Анонимный запрос. Топ-медиа</div>
+                </td>
                 <td>Москва</td>
                 <td>9</td>
                 <td>1</td>
                 <td>1 час</td>
             </tr>
             <tr>
-                <th scope="row">
+                <td><a href="#"><i class="material-icons">star_border</i></a></td>
+                <td scope="row">
                     <a href="#">хеджирование валютных рисков экспортеров и импортеров</a>
-                    <div class="text-muted">РБК (СПб и ЛО)</div>
-                </th>
+                    <div>РБК (СПб и ЛО)</div>
+                </td>
                 <td>Петербург</td>
                 <td>345</td>
                 <td>34</td>
@@ -147,6 +249,17 @@
             </tbody>
         </table>
     </div>
+
+    <nav class="navbar navbar-light">
+        <div class="container">
+            <a class="navbar-text" href="#">Fixed bottom</a>
+            <div class="navbar-text">О проекте</div>
+            <div class="navbar-text">Помощь</div>
+            <div class="navbar-text">Платный доступ</div>
+
+
+        </div>
+    </nav>
 
 
 </div>
