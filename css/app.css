@@ -5061,7 +5061,8 @@ body {
   padding-bottom: 5rem;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh; }
 
 a:hover {
   text-decoration: none;

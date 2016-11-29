@@ -102,283 +102,326 @@
 
 <div class="container">
 
-
     <h2>Запросы журналистов</h2>
 
+    <!-- Submenu -->
     <div class="card card-block-sm mt-1 mb-2 subheader">
 
-        <nav class="nav nav-inline d-inline">
-            <a class="nav-link active" href="#">Все</a>
-            <a class="nav-link" href="#">Мои запросы</a>
-            <a class="nav-link" href="#">Мои ответы</a>
-            <a class="nav-link" href="#"><i class="material-icons material-icons-inherit">star</i>&nbsp;Избранное</a>
-            <a class="nav-link mr-1" href="#">Архив</a>
-            <button class="float-md-right btn btn-sm btn-primary font-weight-sbold btn-floated" href="#">Добавить
-                запрос
+        <ul class="nav d-inline nav-inline">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#all-queries">Все</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#my-queries">Мои запросы</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Мои ответы</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i
+                        class="material-icons material-icons-inherit">star</i>&nbsp;Избранное</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link mr-1" href="#">Архив</a>
+            </li>
+            <button class="float-md-right btn btn-sm btn-primary font-weight-sbold btn-floated" href="#">
+                Добавить запрос
             </button>
-        </nav>
+        </ul>
 
     </div>
 
-    <div class="card">
-        <table class="table table-responsive table-main">
-            <thead>
-            <tr>
-                <td>&nbsp;</td>
-                <td class="align-top">&nbsp;</td>
-                <td class="px-3 align-middle">
-                    <form>
-                        <select class="custom-select custom-select custom-select-small" id="select-topic">
-                            <option selected>Запросы из всех отраслей</option>
-                            <option disabled>Выберите отрасль:</option>
-                            <option>IT</option>
-                            <option>Нефтедобыча</option>
-                        </select>
-                    </form>
-                </td>
-                <td class="align-middle"><span class="font-xs font-weight-sbold">Дедлайн</span></td>
-                <td class="align-middle"><span class="font-xs font-weight-sbold">Ответы (принятые)</span></td>
-                <td class="align-middle pr-2">
-                    <form>
-                        <select class="custom-select custom-select custom-select-small" id="select-city">
-                            <option selected>Все города</option>
-                            <option>Москва</option>
-                            <option>Комсомольск-на-Амуре</option>
-                        </select>
-                    </form>
-                </td>
+    <!-- CONTENT -->
+    <div class="tab-content">
 
-            </tr>
-            </thead>
+        <!-- All Queries Table -->
+        <div class="tab-pane active" id="all-queries">
 
-            <tbody>
-            <tr class="tr-special">
-                <td><span class="pficon-fire" title="Срочный запрос"></span></td>
-                <td><a href="#"><i class="material-icons">star_border</i></a></td>
-                <td scope="row">
-                    <div class="media">
-                        <a class="media-left float-xs-none" href="#">
-                            <div class="relative">
-                                <img class="media-object rounded-circle" src="img/avatar-test5.png" width="35"
-                                     height="35">
-                                <i class="material-icons tag-chevron">verified_user</i>
+            <div class="card">
+
+                <table class="table table-responsive table-main">
+                    <thead>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td class="align-top">&nbsp;</td>
+                        <td class="px-3 align-middle">
+                            <form>
+                                <select class="custom-select custom-select custom-select-small" id="select-topic">
+                                    <option selected>Запросы из всех отраслей</option>
+                                    <option disabled>Выберите отрасль:</option>
+                                    <option>IT</option>
+                                    <option>Нефтедобыча</option>
+                                </select>
+                            </form>
+                        </td>
+                        <td class="align-middle"><span class="font-xs font-weight-sbold">Дедлайн</span></td>
+                        <td class="align-middle"><span class="font-xs font-weight-sbold">Ответы (принятые)</span></td>
+                        <td class="align-middle pr-2">
+                            <form>
+                                <select class="custom-select custom-select custom-select-small" id="select-city">
+                                    <option selected>Все города</option>
+                                    <option>Москва</option>
+                                    <option>Комсомольск-на-Амуре</option>
+                                </select>
+                            </form>
+                        </td>
+
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr class="tr-special">
+                        <td><span class="pficon-fire" title="Срочный запрос"></span></td>
+                        <td><a href="#"><i class="material-icons">star_border</i></a></td>
+                        <td scope="row">
+                            <div class="media">
+                                <a class="media-left float-xs-none" href="#">
+                                    <div class="relative">
+                                        <img class="media-object rounded-circle" src="img/avatar-test5.png" width="35"
+                                             height="35">
+                                        <i class="material-icons tag-chevron"
+                                           title="Проверенный пользователь">verified_user</i>
+                                    </div>
+                                </a>
+                                <div class="media-body font-md">
+                                    <p class="media-heading"><a href="#" class="font-weight-sbold">Что делать, если вам
+                                        настойчиво предлагают продать компанию, а вы не хотите?</a></p>
+                                    <div>Секрет фирмы</div>
+                                </div>
                             </div>
-                        </a>
-                        <div class="media-body font-md">
-                            <p class="media-heading"><a href="#" class="font-weight-sbold">Что делать, если вам
-                                настойчиво предлагают продать компанию, а вы не хотите?</a></p>
-                            <div>Секрет фирмы</div>
-                        </div>
-                    </div>
-                </td>
-                <td><span class="tag tag-deadline tag-pill">4 часа</span></td>
-                <td>34(3)</td>
-                <td>Москва</td>
-            </tr>
+                        </td>
+                        <td><span class="tag tag-deadline tag-pill">4 часа</span></td>
+                        <td>34(3)</td>
+                        <td>Москва</td>
+                    </tr>
 
-            <tr class="tr-special">
-                <td><span class="pficon-fire" title="Срочный запрос"></span></td>
-                <td><a href="#"><i class="material-icons">star_border</i></a></td>
-                <td scope="row">
-                    <div class="media">
-                        <a class="media-left float-xs-none" href="#">
-                            <div class="relative">
-                                <img class="media-object rounded-circle" src="img/avatar-test.png" width="35"
-                                     height="35">
-                                <i class="material-icons tag-chevron">verified_user</i>
+                    <tr class="tr-special">
+                        <td><span class="pficon-fire" title="Срочный запрос"></span></td>
+                        <td><a href="#"><i class="material-icons">star_border</i></a></td>
+                        <td scope="row">
+                            <div class="media">
+                                <a class="media-left float-xs-none" href="#">
+                                    <div class="relative">
+                                        <img class="media-object rounded-circle" src="img/avatar-test.png" width="35"
+                                             height="35">
+                                        <i class="material-icons tag-chevron"
+                                           title="Проверенный пользователь">verified_user</i>
+                                    </div>
+                                </a>
+                                <div class="media-body font-md">
+                                    <p class="media-heading"><a href="#" class="font-weight-sbold">Рынок
+                                        настольных игр</a></p>
+                                    <div class="d-inline-block">Компания</div>
+                                </div>
                             </div>
-                        </a>
-                        <div class="media-body font-md">
-                            <p class="media-heading"><a href="#" class="font-weight-sbold">Рынок
-                                настольных игр</a></p>
-                            <div class="d-inline-block">Компания</div>
-                        </div>
-                    </div>
 
 
-                </td>
-                <td><span class="tag tag-deadline tag-pill">4 часа</span></td>
-                <td>34(3)</td>
-                <td>Москва</td>
-            </tr>
+                        </td>
+                        <td><span class="tag tag-deadline tag-pill">4 часа</span></td>
+                        <td>34(3)</td>
+                        <td>Москва</td>
+                    </tr>
 
-            <tr>
-                <td>&nbsp;</td>
-                <td><a href="#"><i class="material-icons">star_border</i></a></td>
-                <td scope="row">
-                    <div class="media">
-                        <a class="media-left float-xs-none" href="#">
-                            <img class="media-object rounded-circle" src="img/avatar-test5.png" width="35" height="35">
-                        </a>
-                        <div class="media-body font-md">
-                            <p class="media-heading"><a href="#" class="font-weight-sbold">Суровая зима для
-                                бюджета</a></p>
-                            <div>Вестник Московского государственного университета им. М.В.
-                                Ломоносова
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td><a href="#"><i class="material-icons">star_border</i></a></td>
+                        <td scope="row">
+                            <div class="media">
+                                <a class="media-left float-xs-none" href="#">
+                                    <img class="media-object rounded-circle" src="img/avatar-test5.png" width="35"
+                                         height="35">
+                                </a>
+                                <div class="media-body font-md">
+                                    <p class="media-heading"><a href="#" class="font-weight-sbold">Суровая зима для
+                                        бюджета</a></p>
+                                    <div>Вестник Московского государственного университета им. М.В.
+                                        Ломоносова
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                </td>
-                <td><span class="tag tag-deadline tag-pill">2 дня</span></td>
-                <td>7(5)</td>
-                <td>Москва</td>
-            </tr>
+                        </td>
+                        <td><span class="tag tag-deadline tag-pill">2 дня</span></td>
+                        <td>7(5)</td>
+                        <td>Москва</td>
+                    </tr>
 
-            <tr>
-                <td>&nbsp;</td>
-                <td><a href="#"><i class="material-icons">star_border</i></a></td>
-                <td scope="row">
-                    <div class="media">
-                        <a class="media-left float-xs-none" href="#">
-                            <img class="media-object rounded-circle" src="img/avatar-test3.jpg" width="35" height="35">
-                        </a>
-                        <div class="media-body font-md">
-                            <p class="media-heading"><a href="#">Фитнес-клубы - какие
-                                новые форматы востребованы на
-                                рынке?</a></p>
-                            <div>Компания</div>
-                        </div>
-                    </div>
-                </td>
-                <td><span class="tag tag-deadline tag-pill">10 дней</span></td>
-                <td>5(5)</td>
-                <td>Комсомольск-на-Амуре</td>
-            </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td><a href="#"><i class="material-icons">star_border</i></a></td>
+                        <td scope="row">
+                            <div class="media">
+                                <a class="media-left float-xs-none" href="#">
+                                    <img class="media-object rounded-circle" src="img/avatar-test3.jpg" width="35"
+                                         height="35">
+                                </a>
+                                <div class="media-body font-md">
+                                    <p class="media-heading"><a href="#">Фитнес-клубы - какие
+                                        новые форматы востребованы на
+                                        рынке?</a></p>
+                                    <div>Компания</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td><span class="tag tag-deadline tag-pill">10 дней</span></td>
+                        <td>5(5)</td>
+                        <td>Комсомольск-на-Амуре</td>
+                    </tr>
 
-            <tr>
-                <td>&nbsp;</td>
-                <td><a href="#"><i class="material-icons">star_border</i></a></td>
-                <td scope="row">
-                    <div class="media">
-                        <a class="media-left float-xs-none" href="#">
-                            <img class="media-object rounded-circle" src="img/avatar-test4.jpg" width="35" height="35">
-                        </a>
-                        <div class="media-body font-md">
-                            <p class="media-heading"><a href="#">Для программы про
-                                избавление от ненужных вещей ищем героя (блогера), который
-                                реализует
-                                одежду и другие вещи через приложения</a></p>
-                            <div>Первый</div>
-                        </div>
-                    </div>
-                </td>
-                <td><span class="tag tag-deadline tag-pill">1 час</span></td>
-                <td>9(1)</td>
-                <td>Москва</td>
-            </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td><a href="#"><i class="material-icons">star_border</i></a></td>
+                        <td scope="row">
+                            <div class="media">
+                                <a class="media-left float-xs-none" href="#">
+                                    <img class="media-object rounded-circle" src="img/avatar-test4.jpg" width="35"
+                                         height="35">
+                                </a>
+                                <div class="media-body font-md">
+                                    <p class="media-heading"><a href="#">Для программы про
+                                        избавление от ненужных вещей ищем героя (блогера), который
+                                        реализует
+                                        одежду и другие вещи через приложения</a></p>
+                                    <div>Первый</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td><span class="tag tag-deadline tag-pill">1 час</span></td>
+                        <td>9(1)</td>
+                        <td>Москва</td>
+                    </tr>
 
-            <tr>
-                <td>&nbsp;</td>
-                <td><a href="#"><i class="material-icons">star_border</i></a></td>
-                <td scope="row">
-                    <div class="media">
-                        <a class="media-left float-xs-none" href="#">
-                            <img class="media-object rounded-circle" src="img/avatar_default.jpg" width="35"
-                                 height="35">
-                        </a>
-                        <div class="media-body font-md">
-                            <p class="media-heading"><a href="#">хеджирование валютных
-                                рисков экспортеров и импортеров</a></p>
-                            <div><a href="#" class="text-muted">Раскрыть СМИ</a></div>
-                        </div>
-                    </div>
-                </td>
-                <td><span class="tag tag-deadline tag-pill">7 часов</span></td>
-                <td>
-                    <button type="button" class="btn btn-link"><i class="material-icons">lock_outline
-                    </i></button>
-                </td>
-                <td>Петербург</td>
-            </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td><a href="#"><i class="material-icons">star_border</i></a></td>
+                        <td scope="row">
+                            <div class="media">
+                                <a class="media-left float-xs-none" href="#">
+                                    <img class="media-object rounded-circle" src="img/avatar_default.jpg" width="35"
+                                         height="35">
+                                </a>
+                                <div class="media-body font-md">
+                                    <p class="media-heading"><a href="#">хеджирование валютных
+                                        рисков экспортеров и импортеров</a></p>
+                                    <div><a href="#" class="text-muted">Раскрыть СМИ</a></div>
+                                </div>
+                            </div>
+                        </td>
+                        <td><span class="tag tag-deadline tag-pill">7 часов</span></td>
+                        <td>
+                            <button type="button" class="btn btn-link"><i class="material-icons">lock_outline
+                            </i></button>
+                        </td>
+                        <td>Петербург</td>
+                    </tr>
 
-            <tr>
-                <td>&nbsp;</td>
-                <td><a href="#"><i class="material-icons">star_border</i></a></td>
-                <td scope="row">
-                    <div class="media">
-                        <a class="media-left float-xs-none" href="#">
-                            <img class="media-object rounded-circle" src="img/avatar_default.jpg" width="35"
-                                 height="35">
-                        </a>
-                        <div class="media-body font-md">
-                            <p class="media-heading"><a href="#">хеджирование валютных
-                                рисков экспортеров и импортеров</a></p>
-                            <div>Анонимный из крупного СМИ</div>
-                        </div>
-                    </div>
-                </td>
-                <td><span class="tag tag-deadline tag-pill">7 часов</span></td>
-                <td>
-                    <button type="button" class="btn btn-link"><i class="material-icons">lock_outline
-                    </i></button>
-                </td>
-                <td>Петербург</td>
-            </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td><a href="#"><i class="material-icons">star_border</i></a></td>
+                        <td scope="row">
+                            <div class="media">
+                                <a class="media-left float-xs-none" href="#">
+                                    <img class="media-object rounded-circle" src="img/avatar_default.jpg" width="35"
+                                         height="35">
+                                </a>
+                                <div class="media-body font-md">
+                                    <p class="media-heading"><a href="#">хеджирование валютных
+                                        рисков экспортеров и импортеров</a></p>
+                                    <div class="font-italic text-muted">Анонимный из крупного СМИ</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td><span class="tag tag-deadline tag-pill">7 часов</span></td>
+                        <td>
+                            <button type="button" class="btn btn-link"><i class="material-icons">lock_outline
+                            </i></button>
+                        </td>
+                        <td>Петербург</td>
+                    </tr>
 
-            <tr>
-                <td>&nbsp;</td>
-                <td><a href="#"><i class="material-icons">star_border</i></a></td>
-                <td scope="row">
-                    <div class="media">
-                        <a class="media-left float-xs-none" href="#">
-                            <img class="media-object rounded-circle" src="img/avatar-test6.png" width="35" height="35">
-                        </a>
-                        <div class="media-body font-md">
-                            <p class="media-heading"><a href="#">хеджирование валютных
-                                рисков экспортеров и импортеров</a></p>
-                            <div>РБК (СПб и ЛО)</div>
-                        </div>
-                    </div>
-                </td>
-                <td><span class="tag tag-deadline tag-pill">7 часов</span></td>
-                <td>345(34)</td>
-                <td>Петербург</td>
-            </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td><a href="#"><i class="material-icons">star_border</i></a></td>
+                        <td scope="row">
+                            <div class="media">
+                                <a class="media-left float-xs-none" href="#">
+                                    <img class="media-object rounded-circle" src="img/avatar-test6.png" width="35"
+                                         height="35">
+                                </a>
+                                <div class="media-body font-md">
+                                    <p class="media-heading"><a href="#">хеджирование валютных
+                                        рисков экспортеров и импортеров</a></p>
+                                    <div>РБК (СПб и ЛО)</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td><span class="tag tag-deadline tag-pill">7 часов</span></td>
+                        <td>345(34)</td>
+                        <td>Петербург</td>
+                    </tr>
 
-            <tr>
-                <td>&nbsp;</td>
-                <td><a href="#"><i class="material-icons">star_border</i></a></td>
-                <td scope="row">
-                    <div class="media">
-                        <a class="media-left float-xs-none" href="#">
-                            <img class="media-object rounded-circle" src="img/avatar-test6.png" width="35" height="35">
-                        </a>
-                        <div class="media-body font-md">
-                            <p class="media-heading"><a href="#">хеджирование валютных
-                                рисков экспортеров и импортеров</a></p>
-                            <div>РБК (СПб и ЛО)</div>
-                        </div>
-                    </div>
-                </td>
-                <td><span class="tag tag-deadline tag-pill">7 часов</span></td>
-                <td>345(34)</td>
-                <td>Петербург</td>
-            </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td><a href="#"><i class="material-icons">star_border</i></a></td>
+                        <td scope="row">
+                            <div class="media">
+                                <a class="media-left float-xs-none" href="#">
+                                    <img class="media-object rounded-circle" src="img/avatar-test6.png" width="35"
+                                         height="35">
+                                </a>
+                                <div class="media-body font-md">
+                                    <p class="media-heading"><a href="#">хеджирование валютных
+                                        рисков экспортеров и импортеров</a></p>
+                                    <div>РБК (СПб и ЛО)</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td><span class="tag tag-deadline tag-pill">7 часов</span></td>
+                        <td>345(34)</td>
+                        <td>Петербург</td>
+                    </tr>
 
-            <tr>
-                <td>&nbsp;</td>
-                <td><a href="#"><i class="material-icons">star_border</i></a></td>
-                <td scope="row">
-                    <div class="media">
-                        <a class="media-left float-xs-none" href="#">
-                            <img class="media-object rounded-circle" src="img/avatar-test6.png" width="35" height="35">
-                        </a>
-                        <div class="media-body font-md">
-                            <p class="media-heading"><a href="#">хеджирование валютных
-                                рисков экспортеров и импортеров</a></p>
-                            <div>РБК (СПб и ЛО)</div>
-                        </div>
-                    </div>
-                </td>
-                <td><span class="tag tag-deadline tag-pill">7 часов</span></td>
-                <td>345(34)</td>
-                <td>Петербург</td>
-            </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td><a href="#"><i class="material-icons">star_border</i></a></td>
+                        <td scope="row">
+                            <div class="media">
+                                <a class="media-left float-xs-none" href="#">
+                                    <img class="media-object rounded-circle" src="img/avatar-test6.png" width="35"
+                                         height="35">
+                                </a>
+                                <div class="media-body font-md">
+                                    <p class="media-heading"><a href="#">хеджирование валютных
+                                        рисков экспортеров и импортеров</a></p>
+                                    <div>РБК (СПб и ЛО)</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td><span class="tag tag-deadline tag-pill">7 часов</span></td>
+                        <td>345(34)</td>
+                        <td>Петербург</td>
+                    </tr>
 
-            </tbody>
+                    </tbody>
 
-        </table>
+                </table>
+
+            </div>
+
+        </div>
+
+        <!-- My Queries Table -->
+        <div class="tab-pane" id="my-queries">
+
+            <div class="card">
+
+                <p>lala</p>
+
+            </div>
+
+        </div>
+
     </div>
+
 
     <!-- Footer, sticky -->
 
