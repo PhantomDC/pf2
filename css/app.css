@@ -5165,16 +5165,17 @@ a:hover {
   padding-bottom: 0.35rem;
   font-size: 0.75rem; }
 
-.custom-select-small {
+.custom-select {
   width: 100%;
-  min-width: 120px;
-  max-width: 300px;
   height: 1.8rem;
   padding-top: 0.3rem;
   font-size: 0.75rem;
   font-weight: 600;
   color: #333;
   border-color: #f1f1f1; }
+  .custom-select.custom-select-small {
+    min-width: 120px;
+    max-width: 300px; }
 
 .card {
   box-shadow: 0 2px 3px #ddd; }
