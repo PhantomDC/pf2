@@ -95,44 +95,38 @@
 
         </div>
     </div>
-</nav>
 
+</nav>
 
 <div class="container">
 
 
-    <div class="card mb-2">
+    <h2>Запросы журналистов</h2>
 
+    <div class="card card-block-sm mt-1 mb-2 subheader">
 
-        <ul class="nav nav-tabs">
-            <li class="nav-item">
-                <a class="nav-link active" href="#">Запросы</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Ответы</a>
-            </li>
-            <li class="nav-item float-xs-right">
-                <a class="nav-link" href="#">Архив</a>
-            </li>
-        </ul>
-
-        <nav class="nav nav-inline p-half">
+        <nav class="nav nav-inline d-inline">
             <a class="nav-link active" href="#">Все</a>
             <a class="nav-link" href="#">Мои запросы</a>
+            <a class="nav-link" href="#">Мои ответы</a>
             <a class="nav-link" href="#"><i class="material-icons material-icons-inherit">star</i>&nbsp;Избранное</a>
+            <a class="nav-link mr-1" href="#">Архив</a>
+            <button class="float-md-right btn btn-sm btn-primary font-weight-sbold btn-floated" href="#">Добавить
+                запрос
+            </button>
         </nav>
 
     </div>
-
 
     <div class="card">
         <table class="table table-responsive table-main">
             <thead>
             <tr>
-                <td></td>
-                <td class="small">
+                <td>&nbsp;</td>
+                <td class="align-top">&nbsp;</td>
+                <td class="px-3 align-middle">
                     <form>
-                        <select class="form-control pf" id="x1">
+                        <select class="custom-select custom-select-small" id="select-topic">
                             <option selected>Запросы из всех отраслей</option>
                             <option disabled>Выберите отрасль:</option>
                             <option>IT</option>
@@ -140,124 +134,235 @@
                         </select>
                     </form>
                 </td>
-                <td class="small">
+                <td class="align-middle"><span class="font-xs font-weight-sbold">Дедлайн</span></td>
+                <td class="align-middle"><span class="font-xs font-weight-sbold">Ответы (принятые)</span></td>
+                <td class="align-middle pr-2">
                     <form>
-                        <select class="form-control pf" id="x2">
+                        <select class="custom-select custom-select-small" id="select-city">
                             <option selected>Все города</option>
                             <option>Москва</option>
                             <option>Комсомольск-на-Амуре</option>
                         </select>
                     </form>
                 </td>
-                <td class="small">Ответов</td>
-                <td class="small">Принятых</td>
-                <td class="small">Дедлайн</td>
+
             </tr>
             </thead>
+
             <tbody>
-            <tr>
+            <tr class="tr-special">
+                <td><span class="pficon-fire" title="Срочный запрос"></span></td>
                 <td><a href="#"><i class="material-icons">star_border</i></a></td>
                 <td scope="row">
                     <div class="media">
                         <a class="media-left float-xs-none" href="#">
-                            <img class="media-object rounded-circle" src="img/avatar-test5.png" width="50" height="50">
+                            <img class="media-object rounded-circle" src="img/avatar-test5.png" width="35" height="35">
                         </a>
                         <div class="media-body">
-                            <p class="media-heading mb-0"><a href="#" class="font-weight-sbold">Что делать, если вам
+                            <p class="media-heading"><a href="#" class="font-weight-sbold font-md">Что делать, если вам
                                 настойчиво предлагают продать компанию, а вы не хотите?</a></p>
-                            <div>Секрет фирмы</div>
+                            <div class="font-sm text-black">Секрет фирмы</div>
                         </div>
                     </div>
-
-
                 </td>
+                <td><span class="tag tag-deadline tag-pill">4 часа</span></td>
+                <td><span class="tag-number">34(3)</span></td>
                 <td>Москва</td>
-                <td>34</td>
-                <td>3</td>
-                <td>4 часа</td>
             </tr>
-            <tr>
+
+            <tr class="tr-special">
+                <td><span class="pficon-fire" title="Срочный запрос"></span></td>
                 <td><a href="#"><i class="material-icons">star_border</i></a></td>
                 <td scope="row">
                     <div class="media">
                         <a class="media-left float-xs-none" href="#">
-                            <img class="media-object rounded-circle" src="img/avatar-test.png" width="50" height="50">
+                            <img class="media-object rounded-circle" src="img/avatar-test.png" width="35" height="35">
                         </a>
                         <div class="media-body">
-                            <p class="media-heading mb-0"><a href="#" class="font-weight-sbold">Рынок
+                            <p class="media-heading"><a href="#" class="font-md" class="font-weight-sbold">Рынок
                                 настольных игр</a></p>
-                            <div>Компания</div>
+                            <div class="font-sm text-black">Компания</div>
                         </div>
                     </div>
 
 
                 </td>
+                <td><span class="tag tag-deadline tag-pill">4 часа</span></td>
+                <td><span class="tag-number">34(3)</span></td>
                 <td>Москва</td>
-                <td>34</td>
-                <td>3</td>
-                <td>4 часа</td>
             </tr>
+
             <tr>
+                <td>&nbsp;</td>
                 <td><a href="#"><i class="material-icons">star_border</i></a></td>
                 <td scope="row">
-                    <a href="#" class="font-weight-sbold">Суровая зима для бюджета</a>
-                    <div>Компания</div>
+                    <div class="media">
+                        <a class="media-left float-xs-none" href="#">
+                            <img class="media-object rounded-circle" src="img/avatar-test5.png" width="35" height="35">
+                        </a>
+                        <div class="media-body">
+                            <p class="media-heading"><a href="#" class="font-md" class="font-weight-sbold">Суровая зима для
+                                бюджета</a></p>
+                            <div class="font-sm text-black">Вестник Московского государственного университета им. М.В.
+                                Ломоносова
+                            </div>
+                        </div>
+                    </div>
                 </td>
+                <td><span class="tag tag-deadline tag-pill">2 дня</span></td>
+                <td><span class="tag-number">7(0)</span></td>
                 <td>Москва</td>
-                <td>2</td>
-                <td>0</td>
-                <td>2 дня</td>
             </tr>
+
             <tr>
+                <td>&nbsp;</td>
                 <td><a href="#"><i class="material-icons">star_border</i></a></td>
                 <td scope="row">
-                    <a href="#" class="font-weight-sbold">Фитнес-клубы - какие новые форматы востребованы на
-                        рынке?</a>
-                    <div>Компания</div>
+                    <div class="media">
+                        <a class="media-left float-xs-none" href="#">
+                            <img class="media-object rounded-circle" src="img/avatar-test3.jpg" width="35" height="35">
+                        </a>
+                        <div class="media-body">
+                            <p class="media-heading"><a href="#" class="font-md">Фитнес-клубы - какие
+                                новые форматы востребованы на
+                                рынке?</a></p>
+                            <div class="font-sm text-black">Компания</div>
+                        </div>
+                    </div>
                 </td>
+                <td><span class="tag tag-deadline tag-pill">10 дней</span></td>
+                <td><span class="tag-number">5(5)</span></td>
                 <td>Комсомольск-на-Амуре</td>
-                <td>5</td>
-                <td>9</td>
-                <td>10 дней</td>
             </tr>
+
             <tr>
+                <td>&nbsp;</td>
                 <td><a href="#"><i class="material-icons">star_border</i></a></td>
                 <td scope="row">
-                    <a href="#">Для программы про избавление от ненужных вещей ищем героя (блогера), который
-                        реализует
-                        одежду и другие вещи через приложения</a>
-                    <div>Анонимный запрос. Топ-медиа</div>
+                    <div class="media">
+                        <a class="media-left float-xs-none" href="#">
+                            <img class="media-object rounded-circle" src="img/avatar-test4.jpg" width="35" height="35">
+                        </a>
+                        <div class="media-body">
+                            <p class="media-heading"><a href="#" class="font-md">Для программы про
+                                избавление от ненужных вещей ищем героя (блогера), который
+                                реализует
+                                одежду и другие вещи через приложения</a></p>
+                            <div class="font-sm text-black">Анонимный запрос. Топ-медиа</div>
+                        </div>
+                    </div>
                 </td>
+                <td><span class="tag tag-deadline tag-pill">1 час</span></td>
+                <td><span class="tag-number">9(1)</span></td>
                 <td>Москва</td>
-                <td>9</td>
-                <td>1</td>
-                <td>1 час</td>
             </tr>
+
             <tr>
+                <td>&nbsp;</td>
                 <td><a href="#"><i class="material-icons">star_border</i></a></td>
                 <td scope="row">
-                    <a href="#">хеджирование валютных рисков экспортеров и импортеров</a>
-                    <div>РБК (СПб и ЛО)</div>
+                    <div class="media">
+                        <a class="media-left float-xs-none" href="#">
+                            <img class="media-object rounded-circle" src="img/avatar-test6.png" width="35" height="35">
+                        </a>
+                        <div class="media-body">
+                            <p class="media-heading"><a href="#" class="font-md">хеджирование валютных
+                                рисков экспортеров и импортеров</a></p>
+                            <div class="font-sm text-black">РБК (СПб и ЛО)</div>
+                        </div>
+                    </div>
                 </td>
+                <td><span class="tag tag-deadline tag-pill">7 часов</span></td>
+                <td><span class="tag-number">345(34)</span></td>
                 <td>Петербург</td>
-                <td>345</td>
-                <td>34</td>
-                <td>7 часов</td>
             </tr>
+
+            <tr>
+                <td>&nbsp;</td>
+                <td><a href="#"><i class="material-icons">star_border</i></a></td>
+                <td scope="row">
+                    <div class="media">
+                        <a class="media-left float-xs-none" href="#">
+                            <img class="media-object rounded-circle" src="img/avatar-test6.png" width="35" height="35">
+                        </a>
+                        <div class="media-body">
+                            <p class="media-heading"><a href="#" class="font-md">хеджирование валютных
+                                рисков экспортеров и импортеров</a></p>
+                            <div class="font-sm text-black">РБК (СПб и ЛО)</div>
+                        </div>
+                    </div>
+                </td>
+                <td><span class="tag tag-deadline tag-pill">7 часов</span></td>
+                <td><span class="tag-number">345(34)</span></td>
+                <td>Петербург</td>
+            </tr>
+
+            <tr>
+                <td>&nbsp;</td>
+                <td><a href="#"><i class="material-icons">star_border</i></a></td>
+                <td scope="row">
+                    <div class="media">
+                        <a class="media-left float-xs-none" href="#">
+                            <img class="media-object rounded-circle" src="img/avatar-test6.png" width="35" height="35">
+                        </a>
+                        <div class="media-body">
+                            <p class="media-heading"><a href="#" class="font-md">хеджирование валютных
+                                рисков экспортеров и импортеров</a></p>
+                            <div class="font-sm text-black">РБК (СПб и ЛО)</div>
+                        </div>
+                    </div>
+                </td>
+                <td><span class="tag tag-deadline tag-pill">7 часов</span></td>
+                <td><span class="tag-number">345(34)</span></td>
+                <td>Петербург</td>
+            </tr>
+
+            <tr>
+                <td>&nbsp;</td>
+                <td><a href="#"><i class="material-icons">star_border</i></a></td>
+                <td scope="row">
+                    <div class="media">
+                        <a class="media-left float-xs-none" href="#">
+                            <img class="media-object rounded-circle" src="img/avatar-test6.png" width="35" height="35">
+                        </a>
+                        <div class="media-body">
+                            <p class="media-heading"><a href="#" class="font-md">хеджирование валютных
+                                рисков экспортеров и импортеров</a></p>
+                            <div class="font-sm text-black">РБК (СПб и ЛО)</div>
+                        </div>
+                    </div>
+                </td>
+                <td><span class="tag tag-deadline tag-pill">7 часов</span></td>
+                <td><span class="tag-number">345(34)</span></td>
+                <td>Петербург</td>
+            </tr>
+
+            <tr>
+                <td>&nbsp;</td>
+                <td><a href="#"><i class="material-icons">star_border</i></a></td>
+                <td scope="row">
+                    <div class="media">
+                        <a class="media-left float-xs-none" href="#">
+                            <img class="media-object rounded-circle" src="img/avatar-test6.png" width="35" height="35">
+                        </a>
+                        <div class="media-body">
+                            <p class="media-heading"><a href="#" class="font-md">хеджирование валютных
+                                рисков экспортеров и импортеров</a></p>
+                            <div class="font-sm text-black">РБК (СПб и ЛО)</div>
+                        </div>
+                    </div>
+                </td>
+                <td><span class="tag tag-deadline tag-pill">7 часов</span></td>
+                <td><span class="tag-number">345(34)</span></td>
+                <td>Петербург</td>
+            </tr>
+
             </tbody>
+
         </table>
     </div>
 
-    <nav class="navbar footer">
-        <div class="container">
-            <a class="navbar-text" href="#">Fixed bottom</a>
-            <div class="navbar-text">О проекте</div>
-            <div class="navbar-text">Помощь</div>
-            <div class="navbar-text">Платный доступ</div>
-
-
-        </div>
-    </nav>
+    <!-- Footer, sticky -->
 
 
 </div>
