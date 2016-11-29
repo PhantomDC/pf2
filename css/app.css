@@ -5094,9 +5094,6 @@ a:hover {
 .font-xs {
   font-size: 0.75rem; }
 
-.img-circle {
-  border-radius: 100%; }
-
 .border-2 {
   border: 2px solid; }
   .border-2.border-white {
@@ -5128,7 +5125,7 @@ a:hover {
   display: none; }
 
 .table-main tr.tr-special {
-  background: #F9F9F9; }
+  background: #E3F2FD; }
 
 @media (min-width: 576px) {
   .table-main tr td:nth-child(1) {
@@ -5150,6 +5147,10 @@ a:hover {
     .table-main tr td:nth-child(4), .table-main tr td:nth-child(5), .table-main tr td:nth-child(6) {
       width: 13%; } }
 
+.tag {
+  padding-top: 0.2rem;
+  padding-bottom: 0.25rem; }
+
 .tag-oval {
   position: absolute;
   top: -0.4rem;
@@ -5160,10 +5161,22 @@ a:hover {
   background: transparent;
   color: #333;
   background: #ffe300;
-  min-width: 4.2rem;
-  padding-top: 0.3rem;
-  padding-bottom: 0.35rem;
-  font-size: 0.75rem; }
+  border: 1px solid #ffe300;
+  min-width: 3.8rem; }
+
+.tag-outline-primary {
+  background-color: none;
+  border: 1px solid #3a00ff;
+  color: #3a00ff;
+  font-weight: 400; }
+
+.tag-chevron {
+  position: absolute;
+  bottom: -.4rem;
+  left: calc(50% - 0.5rem);
+  border-radius: 1rem;
+  font-size: 0.96rem;
+  background-color: #fff; }
 
 .custom-select {
   width: 100%;
