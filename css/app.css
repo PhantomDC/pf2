@@ -5080,6 +5080,9 @@ a:hover {
 .text-gray-dark {
   color: #333; }
 
+.text-gray {
+  color: #555; }
+
 .text-white {
   color: #fff; }
 
@@ -5212,9 +5215,9 @@ a:hover {
           .subheader .nav a.active:after {
             bottom: -0.8rem; } }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .btn-floated {
-    width: 65%;
+    width: 30%;
     position: fixed;
     display: block;
     bottom: 1rem;
@@ -5222,6 +5225,11 @@ a:hover {
     padding-top: 0.6rem;
     padding-bottom: 0.6rem;
     box-shadow: 0 5px 25px #333;
-    left: 50%;
-    -ms-transform: translatex(-50%);
-        transform: translatex(-50%); } }
+    right: 3rem; } }
+
+@media (max-width: 767px) {
+  .btn-floated {
+    width: 65%;
+    -ms-transform: translatex(50%);
+        transform: translatex(50%);
+    right: 50%; } }
