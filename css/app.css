@@ -601,8 +601,8 @@ pre {
 .container {
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px; }
+  padding-left: 10px;
+  padding-right: 10px; }
   .container::after {
     content: "";
     display: table;
@@ -627,58 +627,58 @@ pre {
 .container-fluid {
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px; }
+  padding-left: 10px;
+  padding-right: 10px; }
   .container-fluid::after {
     content: "";
     display: table;
     clear: both; }
 
 .row {
-  margin-right: -15px;
-  margin-left: -15px; }
+  margin-right: -10px;
+  margin-left: -10px; }
   .row::after {
     content: "";
     display: table;
     clear: both; }
   @media (min-width: 576px) {
     .row {
-      margin-right: -15px;
-      margin-left: -15px; } }
+      margin-right: -10px;
+      margin-left: -10px; } }
   @media (min-width: 768px) {
     .row {
-      margin-right: -15px;
-      margin-left: -15px; } }
+      margin-right: -10px;
+      margin-left: -10px; } }
   @media (min-width: 992px) {
     .row {
-      margin-right: -15px;
-      margin-left: -15px; } }
+      margin-right: -10px;
+      margin-left: -10px; } }
   @media (min-width: 1200px) {
     .row {
-      margin-right: -15px;
-      margin-left: -15px; } }
+      margin-right: -10px;
+      margin-left: -10px; } }
 
 .col-xs, .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-sm, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-md, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-lg, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-xl, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12 {
   position: relative;
   min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px; }
+  padding-right: 10px;
+  padding-left: 10px; }
   @media (min-width: 576px) {
     .col-xs, .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-sm, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-md, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-lg, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-xl, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12 {
-      padding-right: 15px;
-      padding-left: 15px; } }
+      padding-right: 10px;
+      padding-left: 10px; } }
   @media (min-width: 768px) {
     .col-xs, .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-sm, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-md, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-lg, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-xl, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12 {
-      padding-right: 15px;
-      padding-left: 15px; } }
+      padding-right: 10px;
+      padding-left: 10px; } }
   @media (min-width: 992px) {
     .col-xs, .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-sm, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-md, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-lg, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-xl, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12 {
-      padding-right: 15px;
-      padding-left: 15px; } }
+      padding-right: 10px;
+      padding-left: 10px; } }
   @media (min-width: 1200px) {
     .col-xs, .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-sm, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-md, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-lg, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-xl, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12 {
-      padding-right: 15px;
-      padding-left: 15px; } }
+      padding-right: 10px;
+      padding-left: 10px; } }
 
 .col-xs-1 {
   float: left;
@@ -5037,14 +5037,15 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
     background-size: contain; }
 
 .pficon-fire:after {
-  height: 21px;
+  margin-top: 5px;
+  height: 18px;
   vertical-align: top;
   background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjE0cHgiIGhlaWdodD0iMjVweCIgdmlld0JveD0iMCAwIDE0IDI1IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnNrZXRjaD0iaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoL25zIj4KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggMy4zLjIgKDEyMDQzKSAtIGh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaCAtLT4KICAgIDx0aXRsZT5VbnRpdGxlZCAyPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM+PC9kZWZzPgogICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCIgc2tldGNoOnR5cGU9Ik1TUGFnZSI+CiAgICAgICAgPHBhdGggZD0iTTExLjkxMDMxMjMsOC43MTAxODQ0OSBDMTAuMjE0MDAxOCwxMC4zNTc2NjM1IDkuMjU4OTMzODgsMTIuMzk0NjE4NyA5LjkyNTg1MjAzLDE0LjQ1MTQxNjMgQzEwLjAxMDQ2NzQsMTQuNzEzMDUxNCAxMC4wNjQ3ODE0LDE0Ljk2OTMwMDcgMTAuMTA0NTE2MywxNS4yMzA5MzU4IEwxMC4xMTk2NjcxLDE1LjU0NjQyODYgTDEwLjAyNTA0NjUsMTUuNTgxMDEwOSBMOS42MjIyNjU2MiwxNC42NjgyNjQ1IEM5LjA0OTk2ODA5LDEzLjExNDg5NDcgOC45NjU2Mzg1NCwxMS40NzcwNTM1IDkuNTI3NjQ1LDkuNzk0OTkyMTUgQzEwLjY0Njc5ODMsNi41MDAzMTc2MyA5LjE4NDYwOTUyLDMuMjc0MjQwODMgNi41MTgzNjYyMywwLjY4IEM3Ljc0NzAwNDk4LDMuODE2Nzg2MzkgNy42MzI2NTk4Miw3LjM4MzMwMDYgNS4xNDU2NTI1NywxMC41NDAyMTI4IEM0LjY2Nzk3NTY2LDExLjE0MjAwMTggNC4yNzUyMDAwMywxMS43NTM3MTIgMy45NjE4OTQyOSwxMi4zNzk4Nzg3IEwzLjc3MjY1MzA1LDEyLjc5NDAxNjIgTDMuNzg3ODAzNzgsMTIuNjg1NzMzOCBDNC4yOTAwNjQ5LDEwLjU2NDg3MzkgMy4xOTU3ODE3MSw4LjY0MTAxOTg1IDEuMzc1MTIwODgsNy4xOTExMTM2MiBDMi4zMjAxODM2NCw5LjA3MDE4MDc2IDIuNDY0NTQ0NDEsMTEuMjk5ODg5OSAxLjA5MTU0NDg5LDEzLjQyMDc0OTggQy0wLjA1NzYyMzk4MywxNS42MTA0OTA5IC0wLjM1MTIwNTE4NCwxOC4zMjg2MDQ1IDAuNTQ5MjYyOTU5LDIwLjM0NjAwMDkgQzEuOTU3MTM3NzUsMjMuMjYxMTIwMyAzLjgyNzUzODczLDI0LjYwMjc0NDIgNi4zNjk0MzE2NiwyNC42NzE2MjU0IEM2LjczNzMzNzIxLDI0LjY3NjQ0NDIgNy4xMTU1MzM4MywyNC42NjE5ODc3IDcuNTAzNzM1NjUsMjQuNjEyMzgxOSBDOS41Nzc5NTY4NywyNC4zOTA0MzE0IDEyLjE2OTU4OTksMjMuMzg0NzA5NiAxMy4wMDUxNjcyLDIxLjAwMjIxNDYgQzEzLjgzMDczOTMsMTguOTU5NTkwMSAxNC4yMjM4MDA4LDE2Ljg2NzkyNjcgMTIuNjcxNTY1MiwxNC44NzU3NTg0IEMxMS4xMzkzNCwxMi45MTczMjIgMTEuMTA5ODk2MiwxMC42ODMwNzc0IDExLjkxMDMxMjMsOC43MTAxODQ0OSBaIiBpZD0iU2hhcGUiIGZpbGw9IiNFOTAyMUUiIHNrZXRjaDp0eXBlPSJNU1NoYXBlR3JvdXAiPjwvcGF0aD4KICAgIDwvZz4KPC9zdmc+"); }
 
 a, a:hover {
   transition: all 0.2s; }
 
-.navbar-main .nav-link.active:after, .subheader .nav a.active:after {
+.navbar-main .nav-link.active:after, .sidebar .nav a.active:after {
   content: "";
   position: absolute;
   bottom: -0.65rem;
@@ -5129,26 +5130,22 @@ a:hover {
   display: none; }
 
 .table-main tr.tr-special {
-  background: #E3F2FD; }
+  background: #e3f2fd; }
 
-@media (min-width: 576px) {
-  .table-main tr td:nth-child(1) {
-    padding-left: 1rem; } }
-
-@media (min-width: 576px) {
-  .table-main tr td:nth-child(3) {
-    padding-right: 1rem; } }
-
-.table-main tr td:nth-child(2), .table-main tr td:nth-child(4), .table-main tr td:nth-child(5) {
+.table-main tr td:nth-child(1) {
   text-align: center; }
+  @media (min-width: 576px) {
+    .table-main tr td:nth-child(1) {
+      padding-left: 1rem; } }
 
-.table-main tr td:nth-child(4), .table-main tr td:nth-child(5), .table-main tr td:nth-child(6) {
+.table-main tr td:nth-child(3), .table-main tr td:nth-child(4), .table-main tr td:nth-child(5) {
+  text-align: center;
   vertical-align: middle;
   color: #333;
   font-size: 0.875rem;
   line-height: 1.2; }
   @media (min-width: 576px) {
-    .table-main tr td:nth-child(4), .table-main tr td:nth-child(5), .table-main tr td:nth-child(6) {
+    .table-main tr td:nth-child(3), .table-main tr td:nth-child(4), .table-main tr td:nth-child(5) {
       width: 13%; } }
 
 .tag {
@@ -5199,21 +5196,20 @@ a:hover {
   .card.card-block-sm {
     padding: 0.8rem 1.2rem; }
 
-.subheader {
-  width: 100%;
-  overflow-x: auto; }
-  .subheader .nav {
-    min-width: 544px;
-    white-space: nowrap; }
-    .subheader .nav a {
-      color: #000;
-      font-weight: 500;
-      position: relative; }
-      .subheader .nav a.active:after {
-        bottom: -1rem; }
-        @media (max-width: 767px) {
-          .subheader .nav a.active:after {
-            bottom: -0.8rem; } }
+.sidebar .nav a {
+  color: #000;
+  font-weight: 500;
+  position: relative; }
+  .sidebar .nav a.active:after {
+    left: 0;
+    bottom: 50%;
+    -ms-transform: translateY(50%);
+        transform: translateY(50%);
+    height: 99%;
+    width: 5px; }
+    @media (max-width: 767px) {
+      .sidebar .nav a.active:after {
+        bottom: -0.8rem; } }
 
 @media (max-width: 991px) {
   .btn-floated {
