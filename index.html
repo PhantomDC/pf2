@@ -54,7 +54,7 @@
             <div class="nav-item nav-link dropdown">
                 <a href="#" class="dropdown-toggle no-caret text-white relative" data-toggle="dropdown">
                     <i class="material-icons align-text-top">forum</i>
-                    <span class="tag-primary tag tag-oval">4</span>
+                    <span class="tag-primary tag tag-oval-tr">4</span>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right">
                     <div class="dropdown-item text-muted">Уведомления о сообщениях<br><br><br><br><br><br></div>
@@ -127,7 +127,10 @@
                 <ul class="nav">
 
                     <li class="nav-item p-1">
-                        <a class="nav-link active" data-toggle="tab" href="#all-queries">Все запросы</a>
+                        <a class="nav-link active" data-toggle="tab" href="#all-queries">
+                            Все запросы
+                            <span class="tag-empty-rr">+7</span>
+                        </a>
                     </li>
                     <li class="nav-item p-1">
                         <a class="nav-link" data-toggle="tab" href="#my-queries">Мои запросы</a>
@@ -142,12 +145,19 @@
                     <div class="divider my-1 hidden-md-down"></div>
 
                     <li class="nav-item p-1">
-                        <a class="nav-link" href="#">Подписки</a>
+                        <a class="nav-link" data-toggle="tab" href="#subscriptions-queries">Подписки</a>
                         <div class="hidden-md-down">
-                            <a class="nav-link font-xs d-block pt-half" href="#">Нефть</a>
-                            <a class="nav-link font-xs d-block pt-half" href="#">Google, Gmail, Youtu... </a>
-                            <a class="nav-link font-xs d-block pt-half" href="#">Импортозамещение</a>
-                            <a class="nav-link font-xs d-block pt-half" href="#">Как вы относитесь к...</a>
+                            <a class="nav-link font-xs d-block pt-half" href="#">
+                                <span class="text-truncate d-block">нефть, газ</span>
+                                <span class="tag-empty-r">+2</span>
+                            </a>
+                            <a class="nav-link font-xs d-block pt-half relative" href="#">
+                                <span class="text-truncate d-block">google, google+, youtube</span>
+                                <span class="tag-empty-r">+1</span>
+                            </a>
+                            <a class="nav-link font-xs d-block pt-half" href="#">
+                                <span class="text-truncate d-block">импортозамещение</span>
+                            </a>
                         </div>
                     </li>
 
@@ -168,8 +178,9 @@
             <!-- CONTENT -->
             <div class="tab-content">
 
-                <!-- All Queries Table -->
-                <div class="tab-pane active" id="all-queries">
+
+                <!-- All Queries -->
+                <div class="tab-pane" id="all-queries">
 
                     <div class="card">
 
@@ -184,8 +195,7 @@
                                         <div class="input-group input-group-sm input-group-table">
 
                                             <span class="input-group-addon p-0">
-                                                <select class="custom-select select-small select-transparent py-0 h-100"
-                                                        id="select-topic">
+                                                <select class="custom-select select-small select-transparent py-0 h-100">
                                                     <option selected>Все отрасли</option>
                                                     <option>IT</option>
                                                     <option>Нефтедобыча</option>
@@ -193,7 +203,7 @@
                                             </span>
 
                                             <input type="search" class="form-control"
-                                                   placeholder="Укажите слова для поиска запроса">
+                                                   placeholder="Поиск среди всех запросов">
 
                                             <span class="input-group-btn">
                                                 <button class="btn btn-sm btn-secondary" type="button">
@@ -210,8 +220,7 @@
                                 <td>Ответы (принятые)</td>
                                 <td>
                                     <form>
-                                        <select class="custom-select select-small"
-                                                id="select-city">
+                                        <select class="custom-select select-small">
                                             <option selected>Все города</option>
                                             <option disabled>─────────────</option>
                                             <option>Федеральные СМИ</option>
@@ -399,10 +408,7 @@
                                     </div>
                                 </td>
                                 <td><span class="tag tag-deadline tag-pill">7 часов</span></td>
-                                <td>
-                                    <button type="button" class="btn btn-link"><i class="material-icons">lock_outline
-                                    </i></button>
-                                </td>
+                                <td>0(0)</td>
                                 <td>Петербург</td>
                             </tr>
 
@@ -476,8 +482,10 @@
                     </div>
 
                 </div>
+                <!-- End of All Queries -->
 
-                <!-- My Queries Table -->
+
+                <!-- My Queries -->
                 <div class="tab-pane" id="my-queries">
 
                     <div class="card">
@@ -487,6 +495,217 @@
                     </div>
 
                 </div>
+                <!-- End of My Queries -->
+
+
+                <!-- Subscriptions Queries -->
+                <div class="tab-pane active" id="subscriptions-queries">
+
+                    <div class="card">
+
+                        <table class="table table-responsive table-main">
+
+                            <thead>
+                            <tr>
+                                <td colspan="2">
+
+                                    <form>
+
+                                        <div class="input-group input-group-sm input-group-table">
+
+                                            <span class="input-group-addon p-0">
+                                                <select class="custom-select select-small select-transparent py-0 h-100">
+                                                    <option selected>Все отрасли</option>
+                                                    <option>IT</option>
+                                                    <option>Нефтедобыча</option>
+                                                </select>
+                                            </span>
+
+                                            <input type="search" class="form-control"
+                                                   placeholder="Поиск среди моих подписок">
+
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-sm btn-secondary" type="button">
+                                                    <span class="font-xs font-weight-sbold">Найти</span>
+                                                </button>
+                                            </span>
+
+                                        </div>
+
+                                    </form>
+
+                                </td>
+                                <td>Дедлайн</td>
+                                <td>Ответы (принятые)</td>
+                                <td>
+                                    <form>
+                                        <select class="custom-select select-small">
+                                            <option selected>Все города</option>
+                                            <option disabled>─────────────</option>
+                                            <option>Федеральные СМИ</option>
+                                            <option>Региональные СМИ</option>
+                                            <option disabled>─────────────</option>
+                                            <option>Москва</option>
+                                            <option>Комсомольск-на-Амуре</option>
+                                        </select>
+                                    </form>
+                                </td>
+
+                            </tr>
+                            </thead>
+
+                            <tbody>
+
+                            <tr>
+                                <td colspan="5" class="table-subheader px-3 pt-3 text-xs-left">
+                                    <div class="row">
+
+                                        <div class="col-md-9">
+                                            <h4 class="font-weight-sbold font-weight-light pr-2">Все мои подписки</h4>
+                                        </div>
+
+                                        <div class="col-md-3">
+                                            <div class="float-md-right">
+
+                                                <button
+                                                        class="btn btn-sm btn-outline-primary font-xs font-weight-sbold mb-half"
+                                                        type="button" data-toggle="modal"
+                                                        data-target="#modal-search">
+                                                    Добавить подписку
+                                                </button>
+
+                                                <br class="hidden-sm-down">
+
+                                                <button class="btn btn-sm btn-link font-xs font-weight-sbold"
+                                                        data-toggle="modal"
+                                                        data-target="#modal-confirm-1">
+                                                    Присылать почтой
+                                                </button>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <a href="#"><i class="material-icons">star_border</i></a>
+                                    <div class="text-primary font-lg" title="Новый запрос">●</div>
+                                </td>
+                                <td scope="row">
+                                    <div class="media">
+                                        <a class="media-left float-xs-none" href="#">
+                                            <img class="media-object rounded-circle" src="img/avatar_default.jpg"
+                                                 width="35"
+                                                 height="35">
+                                        </a>
+                                        <div class="media-body font-md">
+                                            <p class="media-heading font-weight-sbold"><a href="#">хеджирование валютных
+                                                рисков экспортеров и импортеров</a></p>
+                                            <div><a href="#" class="text-muted">Раскрыть СМИ</a></div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><span class="tag tag-deadline tag-pill">7 часов</span></td>
+                                <td>
+                                    <button type="button" class="btn btn-link"><i class="material-icons">lock_outline
+                                    </i></button>
+                                </td>
+                                <td>Петербург</td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <a href="#"><i class="material-icons">star_border</i></a>
+                                    <div class="text-primary font-lg" title="Новый запрос">●</div>
+                                </td>
+                                <td scope="row">
+                                    <div class="media">
+                                        <a class="media-left float-xs-none" href="#">
+                                            <img class="media-object rounded-circle" src="img/avatar-test5.png"
+                                                 width="35"
+                                                 height="35">
+                                        </a>
+                                        <div class="media-body font-md">
+                                            <p class="media-heading"><a href="#" class="font-weight-sbold">Суровая зима
+                                                для
+                                                бюджета</a></p>
+                                            <div>Вестник Московского государственного университета им. М.В.
+                                                Ломоносова
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><span class="tag tag-deadline tag-pill">2 дня</span></td>
+                                <td>7(5)</td>
+                                <td>Москва</td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <a href="#"><i class="material-icons">star_border</i></a>
+                                    <div class="text-primary font-lg" title="Новый запрос">●</div>
+                                </td>
+                                <td scope="row">
+                                    <div class="media">
+                                        <a class="media-left float-xs-none" href="#">
+                                            <div class="relative">
+                                                <img class="media-object rounded-circle" src="img/avatar-test5.png"
+                                                     width="35"
+                                                     height="35">
+                                                <i class="material-icons tag-chevron"
+                                                   title="Проверенный пользователь">verified_user</i>
+                                            </div>
+                                        </a>
+                                        <div class="media-body font-md">
+                                            <p class="media-heading"><a href="#" class="font-weight-sbold">Что делать,
+                                                если
+                                                вам
+                                                настойчиво предлагают продать компанию, а вы не хотите?</a></p>
+                                            <div>Секрет фирмы</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><span class="tag tag-deadline tag-pill">4 часа</span></td>
+                                <td>34(3)</td>
+                                <td>Москва</td>
+                            </tr>
+
+                            <tr>
+                                <td><a href="#"><i class="material-icons">star_border</i></a></td>
+                                <td scope="row">
+                                    <div class="media">
+                                        <a class="media-left float-xs-none" href="#">
+                                            <img class="media-object rounded-circle" src="img/avatar-test4.jpg"
+                                                 width="35"
+                                                 height="35">
+                                        </a>
+                                        <div class="media-body font-md">
+                                            <p class="media-heading"><a href="#">Для программы про
+                                                избавление от ненужных вещей ищем героя (блогера), который
+                                                реализует
+                                                одежду и другие вещи через приложения</a></p>
+                                            <div>Первый</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><span class="tag tag-deadline tag-pill">1 час</span></td>
+                                <td>9(1)</td>
+                                <td>Москва</td>
+                            </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
+                <!-- End of Subscriptions Queries -->
+
 
             </div>
 
@@ -498,6 +717,122 @@
     <!-- Footer, sticky -->
 
 
+</div>
+
+
+<!-- Search in modal window -->
+<div class="modal modal-wide" id="modal-search" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <div class="modal-body">
+                <div class="card">
+
+                    <table class="table table-responsive table-tall table-main">
+
+                        <thead>
+                        <tr>
+                            <td colspan="2">
+
+                                <form>
+
+                                    <div class="input-group input-group-sm input-group-table">
+
+                                            <span class="input-group-addon p-0">
+                                                <select class="custom-select select-small select-transparent py-0 h-100"
+                                                        id="select-topic">
+                                                    <option selected>Все отрасли</option>
+                                                    <option>IT</option>
+                                                    <option>Нефтедобыча</option>
+                                                </select>
+                                            </span>
+
+                                        <input type="search" class="form-control"
+                                               placeholder="Поиск среди всех запросов" value="">
+
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-sm btn-secondary" type="button">
+                                                    <span class="font-xs font-weight-sbold">Найти</span>
+                                                </button>
+                                            </span>
+
+                                    </div>
+
+                                </form>
+
+                            </td>
+                            <td class="text-disabled">Дедлайн</td>
+                            <td class="text-disabled">Ответы (принятые)</td>
+                            <td>
+                                <form>
+                                    <select class="custom-select select-small"
+                                            id="select-city">
+                                        <option selected>Все города</option>
+                                        <option disabled>─────────────</option>
+                                        <option>Федеральные СМИ</option>
+                                        <option>Региональные СМИ</option>
+                                        <option disabled>─────────────</option>
+                                        <option>Москва</option>
+                                        <option>Комсомольск-на-Амуре</option>
+                                    </select>
+                                </form>
+                            </td>
+
+                        </tr>
+                        </thead>
+
+                        <tbody class="relative">
+                        <tr>
+                            <td colspan="5">
+                                <div class="center-xy text-xs-center text-gray">
+                                    <i class="material-icons material-icons-lg text-muted">search</i>
+                                    <p class="mt-1 font-lg text-xs-left">
+                                        Подпишитесь на запросы СМИ, которые вам нужны.
+                                    </p>
+                                    <p class="text-xs-left">
+                                        С помощью ключевых слов отслеживайте тематические запросы. Например, запросы, в
+                                        которых есть слова «банки», «финансы», «ипотека», «автокредит». Вы можете
+                                        просматривать их в разделе «Подписки» или получать по почте.
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+
+                    </table>
+
+                </div>
+            </div>
+
+            <div class="modal-footer">
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Confirm email subscriptions in modal window -->
+<div class="modal modal-confirm" id="modal-confirm-1" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-body">
+                <p>Вы подписываетесь на тематическую рассылку. Мы будем присылать письма на <span
+                        class="font-weight-sbold">user@gmail.com</span> по мере
+                    появления новых запросов. Но не чаще раза в день.</p>
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn btn-link" type="button" data-dismiss="modal">Отменить</button>
+                <button class="btn btn-outline-primary" type="button">Подтвердить</button>
+            </div>
+
+        </div>
+    </div>
 </div>
 
 

@@ -1,3 +1,10 @@
+<!--
+
+Поиск запросов в общем потоке и его результаты
+
+ -->
+
+
 <!DOCTYPE html>
 <html lang="ru" xmlns="http://www.w3.org/1999/html">
 
@@ -54,7 +61,7 @@
             <div class="nav-item nav-link dropdown">
                 <a href="#" class="dropdown-toggle no-caret text-white relative" data-toggle="dropdown">
                     <i class="material-icons align-text-top">forum</i>
-                    <span class="tag-primary tag tag-oval">4</span>
+                    <span class="tag-primary tag tag-oval-tr">4</span>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right">
                     <div class="dropdown-item text-muted">Уведомления о сообщениях<br><br><br><br><br><br></div>
@@ -127,7 +134,10 @@
                 <ul class="nav">
 
                     <li class="nav-item p-1">
-                        <a class="nav-link active" data-toggle="tab" href="#all-queries">Все запросы</a>
+                        <a class="nav-link active" data-toggle="tab" href="#all-queries">
+                            Все запросы
+                            <span class="tag-empty-rr">+7</span>
+                        </a>
                     </li>
                     <li class="nav-item p-1">
                         <a class="nav-link" data-toggle="tab" href="#my-queries">Мои запросы</a>
@@ -144,10 +154,20 @@
                     <li class="nav-item p-1">
                         <a class="nav-link" href="#">Подписки</a>
                         <div class="hidden-md-down">
-                            <a class="nav-link font-xs d-block pt-half" href="#">Нефть</a>
-                            <a class="nav-link font-xs d-block pt-half" href="#">Google, Gmail, Youtu... </a>
-                            <a class="nav-link font-xs d-block pt-half" href="#">Импортозамещение</a>
-                            <a class="nav-link font-xs d-block pt-half" href="#">Как вы относитесь к...</a>
+                            <a class="nav-link font-xs d-block pt-half" href="#">
+                                <span class="text-truncate d-block">нефть, газ</span>
+                                <span class="tag-empty-r">+4</span>
+                            </a>
+                            <a class="nav-link font-xs d-block pt-half relative" href="#">
+                                <span class="text-truncate d-block">google, vine, youtube</span>
+                                <span class="tag-empty-r">+155</span>
+                            </a>
+                            <a class="nav-link font-xs d-block pt-half" href="#">
+                                <span class="text-truncate d-block">импортозамещение</span>
+                            </a>
+                            <a class="nav-link font-xs d-block pt-half" href="#">
+                                <span class="text-truncate d-block">Как вы относитесь к трампуаааа</span>
+                            </a>
                         </div>
                     </li>
 
@@ -193,7 +213,7 @@
                                             </span>
 
                                             <input type="search" class="form-control"
-                                                   placeholder="Поиск запроса" value="куба, фидель, сша">
+                                                   placeholder="Поиск среди всех запросов" value="куба, фидель, сша">
 
                                             <span class="input-group-btn">
                                                 <button class="btn btn-sm btn-secondary" type="button">
@@ -228,11 +248,11 @@
 
                             <tbody>
                             <tr>
-                                <td colspan="5" class="table-subheader px-3 text-xs-left align-bottom">
+                                <td colspan="5" class="table-subheader px-3 pt-3 text-xs-left">
                                     <div class="row">
 
                                         <div class="col-md-9">
-                                            <h4 class="font-weight-sbold font-weight-light pr-2 pb-1">Запросы
+                                            <h4 class="font-weight-sbold font-weight-light pr-2">Запросы
                                                 журналистов на тему:<br>
                                                 <span class="font-weight-sbold">&laquo;куба, фидель,
                                                 сша&raquo;</span>, все отрасли, все
@@ -255,7 +275,8 @@
                                                 <button class="btn btn-sm btn-link font-xs font-weight-sbold">Отправлять на почту
                                                 </button>-->
                                                 <br class="hidden-sm-down">
-                                                <button class="btn btn-sm btn-link font-xs font-weight-sbold">Отменить
+                                                <button
+                                                        class="btn btn-sm btn-link font-xs font-weight-sbold">Очистить результаты
                                                 </button>
 
                                             </div>
@@ -345,8 +366,8 @@
 
                     <div class="card mt-3">
 
-                        <div class="card-header card-header-radius">
-                            <h4 class="px-3 mb-0">Запросы на близкие темы</h4>
+                        <div class="card-header card-header-custom">
+                            <h4>Запросы на близкие темы</h4>
                         </div>
 
                         <table class="table table-responsive table-main">

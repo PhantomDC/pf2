@@ -5023,6 +5023,8 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   .material-icons.material-icons-inherit {
     font-size: inherit;
     vertical-align: text-bottom; }
+  .material-icons.material-icons-lg {
+    font-size: 4rem; }
 
 [class*="pficon-"] {
   position: relative; }
@@ -5071,6 +5073,16 @@ a:hover {
 .relative {
   position: relative; }
 
+.absolute {
+  position: absolute; }
+
+.center-xy {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
+
 .font-weight-sbold {
   font-weight: 600; }
 
@@ -5085,6 +5097,9 @@ a:hover {
 
 .text-gray {
   color: #555; }
+
+.text-disabled {
+  color: #ddd !important; }
 
 .text-white {
   color: #fff; }
@@ -5131,43 +5146,66 @@ a:hover {
 .no-caret:after {
   display: none; }
 
-.table-main {
+.table-main.table-tall {
   min-height: 60vh; }
-  .table-main thead tr:first-child td {
-    font-size: 0.75rem;
-    font-weight: 600;
-    line-height: 1.2;
-    vertical-align: middle;
-    text-align: center;
-    color: #333; }
-  .table-main thead tr td {
-    border-top: none; }
-  .table-main .table-subheader {
-    height: 10rem;
-    background-color: #ddd; }
-  .table-main tr.tr-special {
-    background: #e3f2fd; }
-  .table-main tr td:nth-child(1) {
-    text-align: center; }
-  .table-main tr td:nth-child(3), .table-main tr td:nth-child(4), .table-main tr td:nth-child(5) {
-    text-align: center;
-    vertical-align: middle;
-    font-size: 0.875rem;
-    line-height: 1.2;
-    width: 10%; }
-  .table-main tr td:nth-child(5) {
-    text-align: left;
-    width: 15%; }
+
+.table-main thead tr:first-child td {
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1.2;
+  vertical-align: middle;
+  text-align: center;
+  color: #333; }
+
+.table-main thead tr td {
+  border-top: none; }
+
+.table-main .table-subheader {
+  height: 9rem;
+  background-color: #ddd; }
+
+.table-main tr.tr-special {
+  background: #e3f2fd; }
+
+.table-main tr td:nth-child(1) {
+  text-align: center; }
+
+.table-main tr td:nth-child(3), .table-main tr td:nth-child(4), .table-main tr td:nth-child(5) {
+  text-align: center;
+  vertical-align: middle;
+  font-size: 0.875rem;
+  line-height: 1.2;
+  width: 10%; }
+
+.table-main tr td:nth-child(5) {
+  text-align: left;
+  width: 15%; }
 
 .tag {
   padding-top: 0.2rem;
   padding-bottom: 0.25rem; }
 
-.tag-oval {
+.tag-oval-tr {
   position: absolute;
   top: -0.4rem;
   right: -0.4rem;
-  border-radius: 1rem; }
+  border-radius: 1rem;
+  padding-bottom: .18rem; }
+
+.tag-empty-r, .tag-empty-rr {
+  position: absolute;
+  right: -1.5rem;
+  font-weight: 500;
+  top: 0.7rem;
+  font-size: 80%;
+  color: #3a00ff; }
+
+.tag-empty-rr {
+  top: 0.2rem;
+  right: -3rem; }
+  @media (max-width: 991px) {
+    .tag-empty-rr {
+      right: -1.35rem; } }
 
 .tag-deadline {
   background: transparent;
@@ -5177,10 +5215,10 @@ a:hover {
   min-width: 3.8rem; }
 
 .tag-outline-primary {
-  background-color: none;
+  background-color: transparent;
   border: 1px solid #3a00ff;
   color: #3a00ff;
-  font-weight: 400; }
+  font-weight: 600; }
 
 .tag-chevron {
   position: absolute;
@@ -5230,9 +5268,13 @@ input[type="search"]::-webkit-search-cancel-button {
     border: transparent; }
   .card .card-header-transparent {
     background: transparent; }
-  .card .card-header-radius {
+  .card .card-header-custom {
     border-top-left-radius: 0.26rem;
     border-top-right-radius: 0.26rem; }
+    .card .card-header-custom h4 {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      margin-bottom: 0; }
 
 @media (max-width: 991px) {
   .sidebar.card {
@@ -5317,3 +5359,16 @@ input[type="search"]::-webkit-search-cancel-button {
 .tooltip-inner {
   font-size: 0.75rem;
   font-weight: 100; }
+
+.modal-wide .modal-dialog {
+  max-width: 1100px; }
+  .modal-wide .modal-dialog .modal-content {
+    background-color: #f1f1f1; }
+    .modal-wide .modal-dialog .modal-content .modal-header, .modal-wide .modal-dialog .modal-content .modal-footer {
+      border-color: transparent; }
+
+.modal-confirm .modal-dialog {
+  max-width: 400px;
+  margin-top: 12%; }
+  .modal-confirm .modal-dialog .modal-content {
+    background-color: #f1f1f1; }
