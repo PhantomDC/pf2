@@ -132,9 +132,9 @@
                 <ul class="nav">
 
                     <li class="nav-item p-1">
-                        <a class="nav-link active" data-toggle="tab" href="#all-queries">
+                        <a class="nav-link active relative d-block" data-toggle="tab" href="#all-queries">
                             Все запросы
-                            <span class="tag-empty-rr">+7</span>
+                            <span class="tag-empty-r">+5</span>
                         </a>
                     </li>
                     <li class="nav-item p-1">
@@ -150,23 +150,23 @@
                     <div class="divider my-1 hidden-md-down"></div>
 
                     <li class="nav-item p-1">
-                        <a class="nav-link" href="#">Подписки</a>
-                        <div class="hidden-md-down">
-                            <a class="nav-link font-xs d-block pt-half" href="#">
-                                <span class="text-truncate d-block">нефть, газ</span>
-                                <span class="tag-empty-r">+4</span>
-                            </a>
-                            <a class="nav-link font-xs d-block pt-half relative" href="#">
-                                <span class="text-truncate d-block">google, vine, youtube</span>
-                                <span class="tag-empty-r">+155</span>
-                            </a>
-                            <a class="nav-link font-xs d-block pt-half" href="#">
-                                <span class="text-truncate d-block">импортозамещение</span>
-                            </a>
-                            <a class="nav-link font-xs d-block pt-half" href="#">
-                                <span class="text-truncate d-block">Как вы относитесь к трампуаааа</span>
-                            </a>
-                        </div>
+                        <a class="nav-link js-sub-parent" data-toggle="tab" href="#subscriptions-queries">Подписки</a>
+                    </li>
+
+                    <li class="nav-item px-1 pb-1 hidden-md-down">
+                        <a class="nav-link js-sub font-xs d-block text-truncate relative pr-2" data-toggle="tab"
+                           href="#subscription-test">
+                            нефть, газ
+                            <span class="tag-empty-r">+1</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item px-1 pb-1 hidden-md-down">
+                        <a class="nav-link js-sub font-xs d-block text-truncate relative pr-2" data-toggle="tab"
+                           href="#subscription-test">google strikes back again
+                            <span class="tag-empty-r">+1</span>
+                        </a>
+
                     </li>
 
                     <div class="divider my-1 hidden-md-down"></div>
@@ -259,22 +259,20 @@
 
                                         <div class="col-md-3">
                                             <div class="float-md-right">
-                                                <button
-                                                        class="btn btn-sm btn-outline-primary
-                                                    font-xs font-weight-sbold mb-half"
-                                                        data-toggle="tooltip"
-                                                        data-placement="bottom"
-                                                        data-trigger="hover"
-                                                        title="Потом за этими запросами можно следить в разделе «Подписки»"
-                                                        type="button">Подписаться на запросы
+                                                <button class="btn btn-link">
+                                                    <i class="material-icons"
+                                                       data-toggle="tooltip"
+                                                       data-placement="top"
+                                                       data-trigger="hover"
+                                                       title="Сохранить и подписаться на&nbsp;эту тему">save</i>
                                                 </button>
-                                                <!--
-                                                <br class="hidden-sm-down">
-                                                <button class="btn btn-sm btn-link font-xs font-weight-sbold">Отправлять на почту
-                                                </button>-->
-                                                <br class="hidden-sm-down">
-                                                <button
-                                                        class="btn btn-sm btn-link font-xs font-weight-sbold">Очистить результаты
+
+                                                <button class="btn btn-link">
+                                                    <i class="material-icons"
+                                                       data-toggle="tooltip"
+                                                       data-placement="top"
+                                                       data-trigger="hover"
+                                                       title="Очистить результаты поиска">clear</i>
                                                 </button>
 
                                             </div>
