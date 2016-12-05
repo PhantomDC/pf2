@@ -98,70 +98,70 @@
 
 </nav>
 
+<div class="alert top-alert font-weight-sbold">
+    Появилось <a href="#" class="alert-link">5 новых запросов!</a>
+    <button type="button" class="close ml-2" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+
 <div class="container">
 
-    <div class="subheader clearfix mb-2 mt-1">
+    <!--<div class="subheader clearfix mb-2 mt-1">
         <h2 class="text-gray float-xl-left">Запросы журналистов</h2>
-    </div>
+    </div>-->
 
     <div class="row">
 
-        <div class="col-sm-2">
+        <div class="col-lg-2">
 
-            <button class="btn btn-block btn-outline-primary btn-primary font-weight-sbold btn-floated mb-1"
-                    href="#">Добавить
-                запрос
+            <button class="btn btn-block btn-outline-primary btn-primary font-weight-sbold btn-floated mb-1 mt-half"
+                    href="#">Добавить запрос
             </button>
 
             <!-- Sidebar Left -->
-            <div class="card sidebar">
+            <div class="card card-transparent sidebar">
 
-                <div class="list-group nav">
-                    <a href="#" class="list-group-item active" style="background: transparent; border-color: #dddddd;">Все
-                        <span class="tag tag-default tag-pill float-xs-right" style="border: 1px solid blue;
-                        background: transparent; color: blue; margin-top: 3px;">6
-                            новых!</span></a>
-                    <a href="#" class="list-group-item">Мои запросы</a>
-                    <a href="#" class="list-group-item">Мои ответы</a>
-                    <a href="#" class="list-group-item">Избранное</a>
-                    <a href="#" class="list-group-item">
-                        Подписки
-                        <div class="small mt-half">Нефть</div>
-                        <div class="small mt-half">Украина</div>
-                        <div class="small mt-half">Google</div>
-                        <div class="small mt-half">Импортозамещ...</div>
-                        <div class="small mt-half">Как вы относитесь</div>
+                <ul class="nav">
 
-                    </a>
-                    <a href="#" class="list-group-item">Архив</a>
-                </div>
+                    <li class="nav-item p-1">
+                        <a class="nav-link active" data-toggle="tab" href="#all-queries">Все запросы</a>
+                    </li>
+                    <li class="nav-item p-1">
+                        <a class="nav-link" data-toggle="tab" href="#my-queries">Мои запросы</a>
+                    </li>
+                    <li class="nav-item p-1">
+                        <a class="nav-link" href="#">Мои ответы</a>
+                    </li>
+                    <li class="nav-item p-1">
+                        <a class="nav-link" href="#">Избранное</a>
+                    </li>
 
-                <!-- <ul class="nav">
-                     <li class="nav-item p-1">
-                         <a class="nav-link active" data-toggle="tab" href="#all-queries">Все</a>
-                     </li>
-                     <li class="nav-item p-1">
-                         <a class="nav-link" data-toggle="tab" href="#my-queries">Мои запросы</a>
-                     </li>
-                     <li class="nav-item p-1">
-                         <a class="nav-link" href="#">Мои ответы</a>
-                     </li>
-                     <li class="nav-item p-1">
-                         <a class="nav-link" href="#">Избранное</a>
-                     </li>
-                     <li class="nav-item p-1">
-                         <a class="nav-link" href="#">Подписки</a>
-                     </li>
-                     <li class="nav-item p-1">
-                         <a class="nav-link" href="#">Архив</a>
-                     </li>
-                 </ul>-->
+                    <div class="divider my-1 hidden-md-down"></div>
+
+                    <li class="nav-item p-1">
+                        <a class="nav-link" href="#">Подписки</a>
+                        <div class="hidden-md-down">
+                            <a class="nav-link font-xs d-block pt-half" href="#">Нефть</a>
+                            <a class="nav-link font-xs d-block pt-half" href="#">Google, Gmail, Youtu... </a>
+                            <a class="nav-link font-xs d-block pt-half" href="#">Импортозамещение</a>
+                            <a class="nav-link font-xs d-block pt-half" href="#">Как вы относитесь к...</a>
+                        </div>
+                    </li>
+
+                    <div class="divider my-1 hidden-md-down"></div>
+
+                    <li class="nav-item p-1">
+                        <a class="nav-link" href="#">Архив</a>
+                    </li>
+
+                </ul>
 
             </div>
 
         </div>
 
-        <div class="col-sm-7">
+        <div class="col-lg-10">
 
             <!-- CONTENT -->
             <div class="tab-content">
@@ -172,29 +172,50 @@
                     <div class="card">
 
                         <table class="table table-responsive table-main">
+
                             <thead>
                             <tr>
-                                <td class="align-top">&nbsp;</td>
-                                <td class="px-3 align-middle">
+                                <td colspan="2">
+
                                     <form>
-                                        <select class="custom-select custom-select custom-select-small"
-                                                id="select-topic">
-                                            <option selected>Запросы из всех отраслей</option>
-                                            <option disabled>Выберите отрасль:</option>
-                                            <option>IT</option>
-                                            <option>Нефтедобыча</option>
-                                        </select>
+
+                                        <div class="input-group input-group-sm input-group-table">
+
+                                            <span class="input-group-addon p-0">
+                                                <select class="custom-select select-small select-transparent py-0 h-100"
+                                                        id="select-topic">
+                                                    <option selected>Все отрасли</option>
+                                                    <option disabled>Выберите отрасль:</option>
+                                                    <option>IT</option>
+                                                    <option>Нефтедобыча</option>
+                                                </select>
+                                            </span>
+
+                                            <input type="search" class="form-control"
+                                                   placeholder="Укажите слова для поиска запроса">
+
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-sm btn-secondary" type="button">
+                                                    <span class="font-xs font-weight-sbold">Найти</span>
+                                                </button>
+                                            </span>
+
+                                        </div>
+
                                     </form>
+
                                 </td>
-                                <td class="align-middle"><span class="font-xs font-weight-sbold">Дедлайн</span></td>
-                                <td class="align-middle"><span
-                                        class="font-xs font-weight-sbold">Ответы (принятые)</span>
-                                </td>
-                                <td class="align-middle pr-2">
+                                <td>Дедлайн</td>
+                                <td>Ответы (принятые)</td>
+                                <td>
                                     <form>
-                                        <select class="custom-select custom-select custom-select-small"
+                                        <select class="custom-select select-small"
                                                 id="select-city">
                                             <option selected>Все города</option>
+                                            <option disabled>─────────────</option>
+                                            <option>Федеральные СМИ</option>
+                                            <option>Региональные СМИ</option>
+                                            <option disabled>─────────────</option>
                                             <option>Москва</option>
                                             <option>Комсомольск-на-Амуре</option>
                                         </select>
@@ -205,6 +226,7 @@
                             </thead>
 
                             <tbody>
+                            <tr><td colspan="5">ddd</td></tr>
                             <tr class="tr-special">
                                 <td>
                                     <a href="#"><i class="material-icons">star_border</i></a>
@@ -468,44 +490,6 @@
 
             </div>
 
-        </div>
-
-        <div class="col-sm-3">
-            <div class="list-group">
-                <a href="#" class="list-group-item list-group-item-action ">
-                    <h5 class="list-group-item-heading">Heading</h5>
-                    <p class="list-group-item-text">Судебные эксперты обсудили тонкости профессии </p>
-                </a>
-                <a href="#" class="list-group-item list-group-item-action">
-                    <h5 class="list-group-item-heading">Heading heading</h5>
-                    <p class="list-group-item-text">Катерина Гувакова возглавила Департамент маркетинга СarMoney </p>
-                </a>
-                <a href="#" class="list-group-item list-group-item-action">
-                    <h5 class="list-group-item-heading">Heading heading</h5>
-                    <p class="list-group-item-text">Катерина Гувакова возглавила Департамент маркетинга СarMoney</p>
-                </a>
-                <a href="#" class="list-group-item list-group-item-action">
-                    <h5 class="list-group-item-heading">Heading heading</h5>
-                    <p class="list-group-item-text">Катерина Гувакова возглавила Департамент маркетинга СarMoney</p>
-                </a>
-                <a href="#" class="list-group-item list-group-item-action">
-                    <h5 class="list-group-item-heading">Heading heading</h5>
-                    <p class="list-group-item-text">Катерина Гувакова возглавила Департамент маркетинга СarMoney</p>
-                </a>
-                <a href="#" class="list-group-item list-group-item-action">
-                    <h5 class="list-group-item-heading">Heading heading</h5>
-                    <p class="list-group-item-text">Катерина Гувакова возглавила Департамент маркетинга СarMoney</p>
-                </a>
-                <a href="#" class="list-group-item list-group-item-action">
-                    <h5 class="list-group-item-heading">Heading heading</h5>
-                    <p class="list-group-item-text">Катерина Гувакова возглавила Департамент маркетинга СarMoney</p>
-                </a>
-                <a href="#" class="list-group-item list-group-item-action">
-                    <h5 class="list-group-item-heading">Heading heading</h5>
-                    <p class="list-group-item-text">Катерина Гувакова возглавила Департамент маркетинга СarMoney</p>
-                </a>
-
-            </div>
         </div>
 
 

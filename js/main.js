@@ -1,1 +1,1 @@
-/** * Created by filip on 27/11/2016. */
+/** * Created by filip on 27/11/2016. */$(function () {    $('[data-toggle="tooltip"]').tooltip()})
