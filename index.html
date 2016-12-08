@@ -146,10 +146,10 @@
                             Мои запросы
                             <span class="tag-empty-r">
                                 <span
-                                      title="У вас 1 новый ответ и 1 новый комментарий к запросам"
-                                      data-toggle="tooltip"
-                                      data-trigger="hover"
-                                      data-placement="bottom">●</span>
+                                        title="У вас 1 новый ответ и 1 новый комментарий к запросам"
+                                        data-toggle="tooltip"
+                                        data-trigger="hover"
+                                        data-placement="bottom">●</span>
                             </span>
                         </a>
                     </li>
@@ -212,7 +212,7 @@
 
 
                 <!-- All Queries -->
-                <div class="tab-pane active" id="all-queries">
+                <div class="tab-pane" id="all-queries">
 
                     <div class="card">
 
@@ -520,7 +520,7 @@
 
 
                 <!-- My Queries -->
-                <div class="tab-pane" id="my-queries">
+                <div class="tab-pane active" id="my-queries">
 
                     <div class="card">
 
@@ -576,9 +576,27 @@
                             </thead>
 
                             <tbody>
-                            <tr>
+
+                            <tr class="trigger-show-hvr">
+
                                 <td>
-                                    <a href="#"><i class="material-icons">star_border</i></a></td>
+                                    <a href="#"
+                                       data-toggle="tooltip"
+                                       data-placement="right"
+                                       data-trigger="hover"
+                                       title="Добавить в избранное">
+                                        <i class="material-icons">star_border</i>
+                                    </a>
+                                    <div class="mt-half hidden-xl-up"></div>
+                                    <a href="#"
+                                       data-toggle="tooltip"
+                                       data-placement="right"
+                                       data-trigger="hover"
+                                       title="Убрать в архив">
+                                        <i class="material-icons font-lg show-hvr">archive</i>
+                                    </a>
+                                </td>
+
                                 <td scope="row">
                                     <div class="media">
                                         <a class="media-left float-xs-none" href="#">
@@ -598,23 +616,44 @@
                                         </div>
                                     </div>
                                 </td>
+
                                 <td><span class="tag tag-deadline tag-pill">24 часа</span></td>
+
                                 <td>
                                     3(1)
                                     <div class="mt-half font-weight-sbold font-sm">
                                         <a href="query.html"
+                                           class="tag tag-pill tag-primary"
                                            title="1 новый ответ и 1 новый комментарий"
                                            data-toggle="tooltip"
                                            data-trigger="hover" data-placement="top">+2</a>
                                     </div>
                                 </td>
+
                                 <td>Москва</td>
+
                             </tr>
 
-                            <tr>
+                            <tr class="trigger-show-hvr">
+
                                 <td>
-                                    <a href="#"><i class="material-icons">star_border</i></a>
+                                    <a href="#"
+                                       data-toggle="tooltip"
+                                       data-placement="right"
+                                       data-trigger="hover"
+                                       title="Добавить в избранное">
+                                        <i class="material-icons">star_border</i>
+                                    </a>
+                                    <div class="mt-half hidden-xl-up"></div>
+                                    <a href="#"
+                                       data-toggle="tooltip"
+                                       data-placement="right"
+                                       data-trigger="hover"
+                                       title="Убрать в архив">
+                                        <i class="material-icons font-lg show-hvr">archive</i>
+                                    </a>
                                 </td>
+
                                 <td scope="row">
                                     <div class="media">
                                         <a class="media-left float-xs-none" href="#">
@@ -713,12 +752,31 @@
                                 </td>
 
                             </tr>
+
                             </thead>
 
                             <tbody>
-                            <tr>
+
+                            <tr class="trigger-show-hvr">
+
                                 <td>
-                                    <a href="#"><i class="material-icons">star_border</i></a></td>
+                                    <a href="#"
+                                       data-toggle="tooltip"
+                                       data-placement="right"
+                                       data-trigger="hover"
+                                       title="Добавить в избранное">
+                                        <i class="material-icons">star_border</i>
+                                    </a>
+                                    <div class="mt-half hidden-xl-up"></div>
+                                    <a href="#"
+                                       data-toggle="tooltip"
+                                       data-placement="right"
+                                       data-trigger="hover"
+                                       title="Убрать в архив">
+                                        <i class="material-icons font-lg show-hvr">archive</i>
+                                    </a>
+                                </td>
+
                                 <td scope="row">
                                     <div class="media">
                                         <a class="media-left float-xs-none" href="#">
@@ -730,7 +788,8 @@
                                         </a>
                                         <div class="media-body font-md">
                                             <p class="media-heading"><a href="pitch.html"
-                                                                        class="font-weight-sbold">Суровая зима для бюджета
+                                                                        class="font-weight-sbold">Суровая зима для
+                                                бюджета
                                             </a></p>
                                             <div>Вестник МГУ</div>
                                         </div>
@@ -741,6 +800,7 @@
                                     32(1)
                                     <div class="mt-half font-weight-sbold font-sm">
                                         <a href="query.html"
+                                           class="tag tag-pill tag-primary"
                                            title="1 новый комментарий"
                                            data-toggle="tooltip"
                                            data-trigger="hover" data-placement="top">+1</a>
