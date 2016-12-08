@@ -210,9 +210,8 @@
             <!-- CONTENT -->
             <div class="tab-content">
 
-
                 <!-- All Queries -->
-                <div class="tab-pane" id="all-queries">
+                <div class="tab-pane active" id="all-queries">
 
                     <div class="card">
 
@@ -518,9 +517,8 @@
                 </div>
                 <!-- End of All Queries -->
 
-
                 <!-- My Queries -->
-                <div class="tab-pane active" id="my-queries">
+                <div class="tab-pane" id="my-queries">
 
                     <div class="card">
 
@@ -592,7 +590,7 @@
                                        data-toggle="tooltip"
                                        data-placement="right"
                                        data-trigger="hover"
-                                       title="Убрать в архив">
+                                       title="Убрать в архив. Запрос также исчезнет из этого потока, а уведомления о его обновлениях перестанут приходить">
                                         <i class="material-icons font-lg show-hvr">archive</i>
                                     </a>
                                 </td>
@@ -649,7 +647,7 @@
                                        data-toggle="tooltip"
                                        data-placement="right"
                                        data-trigger="hover"
-                                       title="Убрать в архив">
+                                       title="Убрать в архив. Запрос также исчезнет из этого потока, а уведомления о его обновлениях перестанут приходить">
                                         <i class="material-icons font-lg show-hvr">archive</i>
                                     </a>
                                 </td>
@@ -696,7 +694,6 @@
 
                 </div>
                 <!-- End of My Queries -->
-
 
                 <!-- My Pitches -->
                 <div class="tab-pane" id="my-pitches">
@@ -772,7 +769,7 @@
                                        data-toggle="tooltip"
                                        data-placement="right"
                                        data-trigger="hover"
-                                       title="Убрать в архив">
+                                       title="Убрать в архив. Запрос также исчезнет из этого потока, а уведомления о его обновлениях перестанут приходить">
                                         <i class="material-icons font-lg show-hvr">archive</i>
                                     </a>
                                 </td>
@@ -1319,6 +1316,157 @@
 
                 </div>
                 <!-- End of Subscriptions Queries -->
+
+                <!-- Archive -->
+                <div class="tab-pane" id="archive">
+
+                    <div class="card">
+
+                        <table class="table table-responsive table-tall table-main">
+
+                            <thead>
+                            <tr>
+                                <td colspan="2">
+
+                                    <form>
+
+                                        <div class="input-group input-group-sm input-group-table">
+
+                                            <span class="input-group-addon p-0">
+                                                <select class="custom-select select-small select-transparent py-0 h-100">
+                                                    <option selected>Все отрасли</option>
+                                                    <option>IT</option>
+                                                    <option>Нефтедобыча</option>
+                                                </select>
+                                            </span>
+
+                                            <input type="search" class="form-control"
+                                                   placeholder="Поиск в архиве">
+
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-sm btn-secondary" type="button">
+                                                    <span class="font-xs font-weight-sbold">Найти</span>
+                                                </button>
+                                            </span>
+
+                                        </div>
+
+                                    </form>
+
+                                </td>
+                                <td>Дедлайн</td>
+                                <td>Ответы (принятые)</td>
+                                <td>
+                                    <form>
+                                        <select class="custom-select select-small">
+                                            <option selected>Все города</option>
+                                            <option disabled>─────────────</option>
+                                            <option>Федеральные СМИ</option>
+                                            <option>Региональные СМИ</option>
+                                            <option disabled>─────────────</option>
+                                            <option>Москва</option>
+                                            <option>Комсомольск-на-Амуре</option>
+                                        </select>
+                                    </form>
+                                </td>
+
+                            </tr>
+                            </thead>
+
+                            <tbody>
+
+                            <tr>
+
+                                <td>
+                                    <a href="#"
+                                       data-toggle="tooltip"
+                                       data-placement="right"
+                                       data-trigger="hover"
+                                       title="Вернуть обратно из архива">
+                                        <i class="material-icons font-lg">unarchive</i>
+                                    </a>
+                                </td>
+
+                                <td scope="row">
+                                    <div class="media">
+                                        <a class="media-left float-xs-none" href="#">
+                                            <div class="relative">
+                                                <img class="media-object rounded-circle" src="img/avatar-test5.png"
+                                                     width="35"
+                                                     height="35">
+                                            </div>
+                                        </a>
+                                        <div class="media-body font-md">
+                                            <p class="media-heading"><a href="query.html"
+                                                                        class="font-weight-sbold">Кто открыл Америку
+                                            </a></p>
+                                            <div>Коммерсант</div>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td><span class="tag tag-deadline tag-pill">24 часа</span></td>
+
+                                <td>
+                                    3(1)
+                                </td>
+
+                                <td>Москва</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>
+                                    <a href="#"
+                                       data-toggle="tooltip"
+                                       data-placement="right"
+                                       data-trigger="hover"
+                                       title="Вернуть обратно из архива">
+                                        <i class="material-icons font-lg">unarchive</i>
+                                    </a>
+                                </td>
+
+                                <td scope="row">
+                                    <div class="media">
+                                        <a class="media-left float-xs-none" href="#">
+                                            <div class="relative">
+                                                <img class="media-object rounded-circle" src="img/avatar-test4.jpg"
+                                                     width="35"
+                                                     height="35">
+                                            </div>
+                                        </a>
+                                        <div class="media-body font-md">
+                                            <p class="media-heading"><a href="query.html"
+                                                                        class="font-weight-sbold">Почему Волга
+                                                впадает в Каспийское море</a></p>
+                                            <div class="d-inline-block">Коммерсант</div>
+                                        </div>
+                                    </div>
+
+
+                                </td>
+                                <td>
+                                    <span class="tag tag-deadline dead-come tag-pill">Закрыт</span>
+                                    <div class="text-gray font-xs" data-toggle="tooltip"
+                                         data-placement="bottom"
+                                         data-trigger="hover"
+                                         title="Когда закрыт">
+                                        <small>25.01.13 18:00</small>
+                                    </div>
+                                </td>
+                                <td>34(3)</td>
+                                <td>Москва</td>
+                            </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
+                <!-- End of My Queries -->
 
 
             </div>
