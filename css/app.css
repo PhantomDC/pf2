@@ -5168,11 +5168,13 @@ a {
 @media (min-width: 1200px) {
   .show-hvr {
     opacity: 0;
-    transition: opacity 0.3s; } }
+    transition: opacity 0.2s;
+    will-change: opacity; } }
 
 .trigger-show-hvr:hover .show-hvr {
   opacity: 1;
-  transition: opacity 0.2s; }
+  transition: opacity 0.2s;
+  will-change: opacity; }
 
 .relative {
   position: relative; }
@@ -5186,6 +5188,10 @@ a {
   top: 50%;
   -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%); }
+
+.pos-t-r {
+  top: 0;
+  right: 0; }
 
 h4 {
   line-height: 1.25; }
@@ -5231,6 +5237,12 @@ h4 {
 
 .font-xs {
   font-size: 0.75rem; }
+
+.bb-1 {
+  border-bottom: 1px solid #ddd; }
+
+.border-trans {
+  border-color: transparent; }
 
 .border-2 {
   border: 2px solid; }
@@ -5345,6 +5357,9 @@ h4 {
   font-weight: 600;
   letter-spacing: .3px;
   color: #888; }
+
+.tag-theme {
+  padding-right: 0.3rem; }
 
 select.select-small {
   width: 100%;
@@ -5672,25 +5687,38 @@ input[type="search"]::-webkit-search-cancel-button {
   56% {
     transform: scale3d(1, 1, 1); } }
 
-.text-truncate-3 {
+.text-truncate-3, .text-truncate-2 {
   overflow: hidden;
   position: relative;
   line-height: 1.5em;
   height: 4.5em; }
-  .text-truncate-3:before {
+  .text-truncate-3:before, .text-truncate-2:before {
     content: '';
     position: absolute;
-    width: 100%;
-    height: 1.4rem;
-    right: 5px;
+    width: 5rem;
+    height: 1.2rem;
+    right: 0;
     bottom: 0;
     background: #fff;
-    background: -webkit-linear-gradient(left, transparent, #fff); }
-  .text-truncate-3:after {
+    background: -webkit-linear-gradient(left, transparent, #fff 48%); }
+  .text-truncate-3:after, .text-truncate-2:after {
     content: '';
     position: absolute;
     right: 0;
     width: 1em;
     height: 1em;
-    margin-top: 0.2em;
     background: white; }
+
+.text-truncate-2 {
+  line-height: 1.5em;
+  height: 3em; }
+
+.pagination .page-item .page-link {
+  color: #888;
+  border-color: #e4e6e8; }
+
+.pagination .page-item.active .page-link {
+  background-color: #ddd;
+  border-color: #e4e6e8;
+  color: #000;
+  pointer-events: none; }
