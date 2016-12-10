@@ -5196,6 +5196,11 @@ a {
 h4 {
   line-height: 1.25; }
 
+p {
+  margin-bottom: 0; }
+  p + p {
+    margin-top: 1rem; }
+
 .font-weight-sbold {
   font-weight: 600; }
 
@@ -5237,6 +5242,11 @@ h4 {
 
 .font-xs {
   font-size: 0.75rem; }
+
+@media (min-width: 576px) {
+  .text-narrow {
+    padding-right: 6rem;
+    padding-left: 6rem; } }
 
 .bb-1 {
   border-bottom: 1px solid #ddd; }
