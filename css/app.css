@@ -5141,7 +5141,7 @@ a, a:not(.btn):hover {
 .navbar-main .nav-link.active:after, .sidebar .nav li a.active:after, .nav-gen .nav-item .nav-link.active:after {
   content: "";
   position: absolute;
-  bottom: -0.7rem;
+  bottom: -.7rem;
   left: 0;
   background: blue;
   width: 100%;
@@ -5268,7 +5268,7 @@ p {
   position: relative; }
   @media (max-width: 1199px) {
     .navbar-main .nav-link.active:after {
-      bottom: -0.55rem; } }
+      bottom: -.55rem; } }
 
 @media (max-width: 991px) {
   .navbar-main .navbar-main-menu .nav-item {
