@@ -22,7 +22,7 @@
 <body>
 
 <!-- Header .main-navbar -->
-<nav class="navbar navbar-main navbar-fixed-top navbar-dark bg-inverse">
+<nav style="visibility: hidden;" class="navbar navbar-main navbar-fixed-top navbar-dark bg-inverse">
 
     <div class="container px-0 relative">
 
@@ -105,11 +105,12 @@
 
 </nav>
 
-<div class="alert alert-top font-weight-sbold">
-    В общей ленте появилось <a href="#" class="alert-link">5 новых запросов!</a>
+<div class="alert alert-top font-weight-sbold" style="background: red; color: white;">
+    ЭТОТ ШАБЛОН ПОКАЗЫВАЕТ ТОЛЬКО ТО, КАК ВЫГЛЯДЯТ РЕЗУЛЬТАТЫ ПОИСКА ЗАПРОСОВ
+    <!--В общей ленте появилось <a href="#" class="alert-link">5 новых запросов!</a>
     <button type="button" class="close ml-2" data-dismiss="alert" aria-label="Close">
         <span aria-hidden="true">&times;</span>
-    </button>
+    </button>-->
 </div>
 
 <div class="container">
@@ -120,11 +121,11 @@
 
     <div class="row">
 
-        <div class="col-lg-2">
+        <div class="col-lg-2" style="visibility: hidden;">
 
-            <button class="btn btn-block btn-outline-primary btn-primary font-weight-sbold btn-floated mb-1 mt-half"
-                    href="#">Добавить запрос
-            </button>
+            <a class="btn btn-block btn-outline-primary btn-primary font-weight-sbold btn-floated mb-1 mt-half"
+               href="query-new.html">Добавить запрос
+            </a>
 
             <!-- Sidebar Left -->
             <div class="card card-transparent sidebar">
@@ -132,19 +133,43 @@
                 <ul class="nav">
 
                     <li class="nav-item p-1">
+
                         <a class="nav-link active relative d-block" data-toggle="tab" href="#all-queries">
                             Все запросы
-                            <span class="tag-empty-r">+5</span>
+                            <span class="tag-empty-r text-muted"  title="Количество запросов на сайте сегодня"
+                                  data-toggle="tooltip"
+                                  data-trigger="hover"
+                                  data-placement="bottom">
+                                201
+                            </span>
                         </a>
                     </li>
                     <li class="nav-item p-1">
-                        <a class="nav-link" data-toggle="tab" href="#my-queries">Мои запросы</a>
+                        <a class="nav-link relative d-block" data-toggle="tab" href="#my-queries">
+                            Мои запросы
+                            <span class="tag-empty-r">
+                                <span class="anim-pulse d-inline-block"
+                                      title="У вас 1 новый ответ и 1 новый комментарий к запросам"
+                                      data-toggle="tooltip"
+                                      data-trigger="hover"
+                                      data-placement="bottom">●</span>
+                            </span>
+                        </a>
                     </li>
                     <li class="nav-item p-1">
-                        <a class="nav-link" href="#">Мои ответы</a>
+                        <a class="nav-link relative d-block" data-toggle="tab" href="#my-pitches">
+                            Мои ответы
+                             <span class="tag-empty-r">
+                                <span
+                                        title="У вас 1 новый комментарий к ответам"
+                                        data-toggle="tooltip"
+                                        data-trigger="hover"
+                                        data-placement="bottom">●</span>
+                            </span>
+                        </a>
                     </li>
                     <li class="nav-item p-1">
-                        <a class="nav-link" href="#">Избранное</a>
+                        <a class="nav-link" data-toggle="tab" href="#starred">Избранное</a>
                     </li>
 
                     <div class="divider my-1 hidden-md-down"></div>
@@ -157,14 +182,16 @@
                         <a class="nav-link js-sub font-xs d-block text-truncate relative pr-2" data-toggle="tab"
                            href="#subscription-test">
                             нефть, газ
-                            <span class="tag-empty-r">+1</span>
+                            <span class="tag-empty-r" title="1 новый запрос по подписке" data-toggle="tooltip"
+                                  data-trigger="hover" data-placement="bottom">●</span>
                         </a>
                     </li>
 
                     <li class="nav-item px-1 pb-1 hidden-md-down">
                         <a class="nav-link js-sub font-xs d-block text-truncate relative pr-2" data-toggle="tab"
                            href="#subscription-test">google strikes back again
-                            <span class="tag-empty-r">+1</span>
+                            <span class="tag-empty-r" title="1 новый запрос по подписке" data-toggle="tooltip"
+                                  data-trigger="hover" data-placement="bottom">●</span>
                         </a>
 
                     </li>
@@ -172,7 +199,7 @@
                     <div class="divider my-1 hidden-md-down"></div>
 
                     <li class="nav-item p-1">
-                        <a class="nav-link" href="#">Архив</a>
+                        <a class="nav-link" data-toggle="tab" href="#archive">Архив</a>
                     </li>
 
                 </ul>
@@ -268,13 +295,13 @@
                                                        title="Сохранить и подписаться на&nbsp;эту тему">save</i>
                                                 </button>
 
-                                                <button class="btn btn-link">
+                                                <a class="btn btn-link" href="index.html">
                                                     <i class="material-icons"
                                                        data-toggle="tooltip"
                                                        data-placement="top"
                                                        data-trigger="hover"
                                                        title="Очистить результаты поиска">clear</i>
-                                                </button>
+                                                </a>
 
                                             </div>
                                         </div>

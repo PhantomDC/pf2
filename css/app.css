@@ -5731,3 +5731,6 @@ input[type="search"]::-webkit-search-cancel-button {
   border-color: #e4e6e8;
   color: #000;
   pointer-events: none; }
+
+.popover {
+  max-width: 380px; }
