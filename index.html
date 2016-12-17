@@ -31,10 +31,15 @@
             </button>
             <div class="collapse navbar-toggleable-md" id="navbar-main-menu">
                 <a class="nav-link nav-item mr-3 font-weight-bold hidden-md-down" href="index.html">pressfeed</a>
-                <a class="nav-link nav-item active" href="index.html">Запросы</a>
-                <a class="nav-link nav-item" href="releases.html">Релизы</a>
-                <a class="nav-link nav-item" href="people.html">Журналисты и эксперты</a>
-                <a class="nav-link nav-item" href="contacts.html">Контакты</a>
+                <a class="nav-link nav-item active" href="index.html">Запросы
+                    <span class="font-xs text-primary">201</span>
+                </a>
+                <a class="nav-link nav-item" href="people.html">Люди
+                    <span class="font-xs text-primary">21276</span>
+                </a>
+                <a class="nav-link nav-item" href="releases.html">Релизы
+                    <span class="font-xs text-primary">∞</span>
+                </a>
             </div>
         </div>
 
@@ -102,101 +107,107 @@
 
 </nav>
 
-<!--<div class="alert top-alert font-weight-sbold">
-    Появилось <a href="#" class="alert-link">5 новых запросов!</a>
-    <button type="button" class="close ml-2" data-dismiss="alert" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-    </button>
-</div>-->
-
 <div class="container">
-
-    <!--<div class="subheader clearfix mb-2 mt-1">
-        <h2 class="text-gray float-xl-left">Запросы журналистов</h2>
-    </div>-->
 
     <div class="row">
 
         <div class="col-lg-2">
 
-            <a class="btn btn-block btn-outline-primary btn-primary font-weight-sbold btn-floated mb-1 mt-half"
-               href="query-new.html">Добавить запрос
-            </a>
-
             <!-- Sidebar Left -->
-            <div class="card card-transparent sidebar">
+            <div class="card card-transparent sidebar pt-half">
+
+                <a class="btn btn-block btn-outline-primary btn-primary font-weight-sbold btn-floated mb-1"
+                   href="query-new.html">Добавить запрос
+                </a>
 
                 <ul class="nav">
 
-                    <li class="nav-item p-1">
-
-                        <a class="nav-link active relative d-block" data-toggle="tab" href="#all-queries">
-                            Все запросы
-                            <span class="tag-empty-r text-muted" title="Количество запросов на сайте сегодня"
-                                  data-toggle="tooltip"
-                                  data-trigger="hover"
-                                  data-placement="bottom">
-                                201
-                            </span>
+                    <li class="nav-item p-1 relative">
+                        <a class="nav-link active" data-toggle="tab" href="#all-queries">
+                            Все <span class="hidden-lg-down">запросы</span>
                         </a>
-                    </li>
-                    <li class="nav-item p-1">
-                        <a class="nav-link relative d-block" data-toggle="tab" href="#my-queries">
-                            Мои запросы
-                            <span class="tag-empty-r">
-                                <span class="anim-pulse d-inline-block"
-                                      title="У вас 1 новый ответ и 1 новый комментарий к запросам"
+                        <span class="tag-new">
+
+                               <!-- <span class="text-muted hidden-md-down"
+                                      title="Всего запросов на сайте сегодня"
                                       data-toggle="tooltip"
                                       data-trigger="hover"
-                                      data-placement="bottom">●</span>
+                                      data-placement="bottom">201</span>-->
+
+                                <span title="Новых запросов"
+                                      data-toggle="tooltip"
+                                      data-trigger="hover"
+                                      data-placement="bottom">+5</span>
+
                             </span>
-                        </a>
                     </li>
-                    <li class="nav-item p-1">
-                        <a class="nav-link relative d-block" data-toggle="tab" href="#my-pitches">
+
+                    <li class="nav-item p-1 relative">
+                        <a class="nav-link" data-toggle="tab" href="#my-queries">
+                            Мои запросы
+                        </a>
+                        <span class="tag-new">
+                                <span class="d-inline-block"
+                                      title="1 новый ответ и 1 новый комментарий к запросам"
+                                      data-toggle="tooltip"
+                                      data-trigger="hover"
+                                      data-placement="bottom">+2</span>
+                        </span>
+                    </li>
+
+                    <li class="nav-item p-1 relative">
+                        <a class="nav-link" data-toggle="tab" href="#my-pitches">
                             Мои ответы
-                             <span class="tag-empty-r">
+                        </a>
+                        <span class="tag-new">
                                 <span
-                                        title="У вас 1 новый комментарий к ответам"
+                                        title="1 новый комментарий к ответам"
                                         data-toggle="tooltip"
                                         data-trigger="hover"
-                                        data-placement="bottom">●</span>
+                                        data-placement="bottom">+1</span>
                             </span>
-                        </a>
                     </li>
+
                     <li class="nav-item p-1">
                         <a class="nav-link" data-toggle="tab" href="#starred">Избранное</a>
                     </li>
 
-                    <div class="divider my-1 hidden-md-down"></div>
-
-                    <li class="nav-item p-1">
-                        <a class="nav-link js-sub-parent" data-toggle="tab" href="#subscriptions-queries">Подписки</a>
-                    </li>
-
-                    <li class="nav-item px-1 pb-1 hidden-md-down">
-                        <a class="nav-link js-sub font-xs d-block text-truncate relative pr-2" data-toggle="tab"
-                           href="#subscription-test">
-                            нефть, газ
-                            <span class="tag-empty-r" title="1 новый запрос по подписке" data-toggle="tooltip"
-                                  data-trigger="hover" data-placement="bottom">●</span>
-                        </a>
-                    </li>
-
-                    <li class="nav-item px-1 pb-1 hidden-md-down">
-                        <a class="nav-link js-sub font-xs d-block text-truncate relative pr-2" data-toggle="tab"
-                           href="#subscription-test">google strikes back again
-                            <span class="tag-empty-r" title="1 новый запрос по подписке" data-toggle="tooltip"
-                                  data-trigger="hover" data-placement="bottom">●</span>
-                        </a>
-
-                    </li>
-
-                    <div class="divider my-1 hidden-md-down"></div>
-
                     <li class="nav-item p-1">
                         <a class="nav-link" data-toggle="tab" href="#archive">Архив</a>
                     </li>
+
+                    <div class="divider my-1 hidden-md-down"></div>
+
+                    <li class="nav-item p-1">
+                        <a class="nav-link" data-toggle="tab" href="#subscriptions-queries">Подписки</a>
+                    </li>
+
+                    <li class="nav-item px-1 py-half hidden-md-down relative">
+                        <a class="nav-link-mini"
+                           data-toggle="tab"
+                           href="#subscription-test1">
+                            <span>нефть, газ</span>
+                        </a>
+                        <span class="tag-new"
+                              title="1 новый запрос по этой подписке"
+                              data-toggle="tooltip"
+                              data-trigger="hover"
+                              data-placement="bottom">+1</span>
+                    </li>
+
+                    <li class="nav-item px-1 py-half hidden-md-down relative">
+                        <a class="nav-link-mini"
+                           data-toggle="tab"
+                           href="#subscription-test2">
+                            <span>Телекоммуникации и IT</span>
+                        </a>
+                        <span class="tag-new"
+                              title="1 новый запрос по этой подписке"
+                              data-toggle="tooltip"
+                              data-trigger="hover"
+                              data-placement="bottom">+1</span>
+                    </li>
+
 
                 </ul>
 
@@ -212,6 +223,7 @@
                 <!-- All Queries -->
                 <div class="tab-pane active" id="all-queries">
 
+
                     <div class="card">
 
                         <table class="table table-responsive table-main">
@@ -226,14 +238,19 @@
 
                                             <span class="input-group-addon p-0">
                                                 <select class="custom-select select-small select-transparent py-0 h-100">
-                                                    <option selected>Все отрасли</option>
+                                                    <option>Все отрасли</option>
                                                     <option>IT</option>
-                                                    <option>Нефтедобыча</option>
+                                                    <option selected>Нефтедобыча</option>
+                                                    <option>Промышленность, производство</option>
                                                 </select>
                                             </span>
 
-                                            <input type="search" class="form-control"
-                                                   placeholder="Поиск среди всех запросов">
+
+                                            <input type="search" class="form-control tag-floated-search" id="search"
+                                                   placeholder="Поиск в отрасли &laquo;Нефтедобыча&raquo;" required>
+                                            <label for="search">Поиск в отрасли &laquo;Нефтедобыча&raquo;:
+                                            </label>
+
 
                                             <span class="input-group-btn">
                                                 <button class="btn btn-sm btn-secondary" type="button">
@@ -263,7 +280,7 @@
                                 </td>
 
                             </tr>
-                            <tr class="alert alert-new">
+                            <!--<tr class="alert alert-new">
                                 <td colspan="5">
                                     <button type="button" data-dismiss="alert" class="close">&times;</button>
                                     <a href="">
@@ -271,7 +288,7 @@
                                         5 новых запросов на сайте
                                     </a>
                                 </td>
-                            </tr>
+                            </tr>-->
                             </thead>
 
                             <tbody>
@@ -332,11 +349,7 @@
 
 
                                                      '
-
-
-
-                                                     data-html="true"
-                                                     data-template='<div class="popover" role="tooltip"><div class="popover-arrow"></div><h3 class="popover-title"></h3><div class="popover-content"></div></div>'>
+                                                     data-html="true">
                                                 <i class="material-icons tag-chevron"
                                                    title="Проверенный пользователь">verified_user</i>
                                             </div>
@@ -1045,7 +1058,7 @@
 
                     <div class="card">
 
-                        <table class="table table-responsive table-main">
+                        <table class="table table-responsive table-tall table-main">
 
                             <thead>
                             <tr>
@@ -1099,34 +1112,24 @@
                             <tbody>
 
                             <tr>
-                                <td colspan="5" class="table-subheader px-3 pt-3 text-xs-left">
+                                <td colspan="5" class="bg-for-card p-2 text-xs-left">
                                     <div class="row">
 
-                                        <div class="col-md-9">
-                                            <h4 class="pr-2">Все мои подписки</h4>
+                                        <div class="col-md-8">
+                                            <h4>Все мои подписки</h4>
                                         </div>
 
-                                        <div class="col-md-3">
+                                        <div class="col-md-4">
                                             <div class="float-md-right">
 
                                                 <button class="btn btn-link"
                                                         data-toggle="modal"
-                                                        data-target="#modal-queries-search">
+                                                        data-target="#modal-queries-search-empty">
                                                     <i class="material-icons"
                                                        data-toggle="tooltip"
                                                        data-placement="top"
                                                        data-trigger="hover"
                                                        title="Новая подписка">add_circle_outline</i>
-                                                </button>
-
-                                                <button class="btn btn-link"
-                                                        data-toggle="modal"
-                                                        data-target="#modal-confirm-1">
-                                                    <i class="material-icons"
-                                                       data-toggle="tooltip"
-                                                       data-placement="top"
-                                                       data-trigger="hover"
-                                                       title="Присылать мне на почту все подписки сразу">mail_outline</i>
                                                 </button>
 
                                             </div>
@@ -1140,7 +1143,6 @@
                             <tr>
                                 <td>
                                     <a href="#"><i class="material-icons">star_border</i></a>
-                                    <div class="text-primary font-lg" title="Новый запрос">●</div>
                                 </td>
                                 <td scope="row">
                                     <div class="media">
@@ -1171,7 +1173,6 @@
                             <tr>
                                 <td>
                                     <a href="#"><i class="material-icons">star_border</i></a>
-                                    <div class="text-primary font-lg" title="Новый запрос">●</div>
                                 </td>
                                 <td scope="row">
                                     <div class="media">
@@ -1270,8 +1271,8 @@
                 </div>
                 <!-- End of Subscriptions Queries -->
 
-                <!-- Certain Subscription Queries -->
-                <div class="tab-pane" id="subscription-test">
+                <!-- Certain Subscription Queries #1 -->
+                <div class="tab-pane" id="subscription-test1">
 
                     <div class="card">
 
@@ -1329,24 +1330,25 @@
                             <tbody>
 
                             <tr>
-                                <td colspan="5" class="table-subheader px-3 pt-3 text-xs-left">
+                                <td colspan="5" class="bg-for-card p-2 text-xs-left">
                                     <div class="row">
 
-                                        <div class="col-md-9">
-                                            <h4 class="font-weight-sbold font-weight-light pr-2">Запросы
+                                        <div class="col-md-8">
+                                            <h4 class="font-weight-light">Запросы
                                                 журналистов на тему:<br>
-                                                <span class="font-weight-sbold">&laquo;нефть, газ&raquo;</span>, все
-                                                отрасли, все
-                                                города</h4>
+                                                <span class="font-weight-bold">нефть, газ —</span>
+                                            <span class="text-muted font-weight-bold">все отрасли, все
+                                                города</span>
+                                            </h4>
                                         </div>
 
-                                        <div class="col-md-3">
+                                        <div class="col-md-4">
                                             <div class="float-md-right">
 
                                                 <button
                                                         class="btn btn-link"
                                                         type="button" data-toggle="modal"
-                                                        data-target="#modal-query-edit">
+                                                        data-target="#modal-query-edit-1">
                                                     <i class="material-icons"
                                                        data-toggle="tooltip"
                                                        data-placement="top"
@@ -1387,7 +1389,6 @@
                             <tr>
                                 <td>
                                     <a href="#"><i class="material-icons">star_border</i></a>
-                                    <div class="text-primary font-lg" title="Новый запрос">●</div>
                                 </td>
                                 <td scope="row">
                                     <div class="media">
@@ -1452,7 +1453,193 @@
                     </div>
 
                 </div>
-                <!-- End of Subscriptions Queries -->
+                <!-- End of Subscriptions Queries #1 -->
+
+                <!-- Certain Subscription Queries #2 -->
+                <div class="tab-pane" id="subscription-test2">
+
+                    <div class="card">
+
+                        <table class="table table-responsive table-tall table-main">
+
+                            <thead>
+                            <tr>
+                                <td colspan="2">
+
+                                    <form>
+
+                                        <div class="input-group input-group-sm input-group-table">
+
+                                            <span class="input-group-addon p-0">
+                                                <select
+                                                        class="custom-select no-radius select-small select-transparent py-0 h-100" disabled>
+                                                    <option>Все отрасли</option>
+                                                    <option>IT</option>
+                                                    <option>Нефтедобыча</option>
+                                                    <option selected>Телекоммуникации и IT</option>
+                                                </select>
+                                            </span>
+
+                                            <input type="search" class="form-control"
+                                                   placeholder="Поиск в этой подписке">
+
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-sm btn-secondary" type="button">
+                                                    <span class="font-xs font-weight-sbold">Найти</span>
+                                                </button>
+                                            </span>
+
+                                        </div>
+
+                                    </form>
+
+                                </td>
+                                <td>Дедлайн</td>
+                                <td>Ответы (принятые)</td>
+                                <td>
+                                    <form>
+                                        <select class="custom-select select-small">
+                                            <option selected>Все города</option>
+                                            <option disabled>─────────────</option>
+                                            <option>Федеральные СМИ</option>
+                                            <option>Региональные СМИ</option>
+                                            <option disabled>─────────────</option>
+                                            <option>Москва</option>
+                                            <option>Комсомольск-на-Амуре</option>
+                                        </select>
+                                    </form>
+                                </td>
+
+                            </tr>
+                            </thead>
+
+                            <tbody>
+
+                            <tr>
+                                <td colspan="5" class="bg-for-card p-2 text-xs-left">
+                                    <div class="row">
+
+                                        <div class="col-md-8">
+                                            <h4 class="font-weight-light">Запросы
+                                                журналистов на тему:<br>
+                                            <span class="text-muted font-weight-bold">телекоммуникации и IT, все
+                                                города</span>
+                                            </h4>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <div class="float-md-right">
+
+                                                <button
+                                                        class="btn btn-link"
+                                                        type="button" data-toggle="modal"
+                                                        data-target="#modal-query-edit-2">
+                                                    <i class="material-icons"
+                                                       data-toggle="tooltip"
+                                                       data-placement="top"
+                                                       data-trigger="hover"
+                                                       title="Изменить подписку">edit</i>
+                                                </button>
+
+
+                                                <button class="btn btn-link"
+                                                        data-toggle="modal"
+                                                        data-target="#modal-confirm-1">
+                                                    <i class="material-icons"
+                                                       data-toggle="tooltip"
+                                                       data-placement="top"
+                                                       data-trigger="hover"
+                                                       title="Присылать мне на почту">mail_outline</i>
+                                                </button>
+
+                                                <button class="btn btn-link text-gray"
+                                                        data-toggle="modal"
+                                                        data-target="#modal-confirm-2"
+                                                        type="button">
+                                                    <i class="material-icons"
+                                                       data-toggle="tooltip"
+                                                       data-placement="top"
+                                                       data-trigger="hover"
+                                                       title="Удалить подписку">delete</i>
+                                                </button>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <a href="#"><i class="material-icons">star_border</i></a>
+                                </td>
+                                <td scope="row">
+                                    <div class="media">
+                                        <a class="media-left float-xs-none" href="#">
+                                            <img class="media-object rounded-circle" src="img/avatar_default.jpg"
+                                                 width="35"
+                                                 height="35"
+                                                 data-toggle="popover"
+                                                 data-trigger="hover"
+                                                 data-placement="right"
+                                                 data-content="Быстрая карточка пользователя">
+                                        </a>
+                                        <div class="media-body">
+                                            <p class="media-heading font-weight-sbold"><a href="#">хеджирование валютных
+                                                рисков экспортеров и импортеров</a></p>
+                                            <div><a href="#" class="text-muted">Раскрыть СМИ</a></div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><span class="tag tag-deadline tag-pill">7 часов</span></td>
+                                <td>
+                                    <button type="button" class="btn btn-link"><i class="material-icons">lock_outline
+                                    </i></button>
+                                </td>
+                                <td>Петербург</td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <a href="#"><i class="material-icons">star_border</i></a>
+                                </td>
+                                <td scope="row">
+                                    <div class="media">
+                                        <a class="media-left float-xs-none" href="#">
+                                            <img class="media-object rounded-circle" src="img/avatar_default.jpg"
+                                                 width="35"
+                                                 height="35"
+                                                 data-toggle="popover"
+                                                 data-trigger="hover"
+                                                 data-placement="right"
+                                                 data-content="Быстрая карточка пользователя">
+                                        </a>
+                                        <div class="media-body">
+                                            <p class="media-heading font-weight-sbold"><a href="#">хеджирование валютных
+                                                рисков экспортеров и импортеров</a></p>
+                                            <div><a href="#" class="text-muted">Раскрыть СМИ</a></div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><span class="tag tag-deadline tag-pill">7 часов</span></td>
+                                <td>
+                                    <button type="button" class="btn btn-link"><i class="material-icons">lock_outline
+                                    </i></button>
+                                </td>
+                                <td>Петербург</td>
+                            </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
+                <!-- End of Subscriptions Queries #2 -->
+
 
                 <!-- Archive -->
                 <div class="tab-pane" id="archive">
@@ -1627,8 +1814,8 @@
 </div>
 
 
-<!-- Search queries in modal window -->
-<div class="modal modal-wide" id="modal-queries-search" tabindex="-1">
+<!-- Search queries in modal window 1 -->
+<div class="modal modal-wide" id="modal-queries-search-empty" tabindex="-1">
     <div class="modal-dialog">
         <div class="modal-content">
 
@@ -1721,8 +1908,8 @@
     </div>
 </div>
 
-<!-- Edit query in modal window -->
-<div class="modal modal-wide" id="modal-query-edit" tabindex="-1">
+<!-- Edit query in modal window 1 -->
+<div class="modal modal-wide" id="modal-query-edit-1" tabindex="-1">
     <div class="modal-dialog">
         <div class="modal-content">
 
@@ -1734,7 +1921,7 @@
             <div class="modal-body">
                 <div class="card">
 
-                    <table class="table table-responsive table-tall table-main">
+                    <table class="table table-responsive table-main">
 
                         <thead>
                         <tr>
@@ -1749,6 +1936,7 @@
                                                     <option selected>Все отрасли</option>
                                                     <option>IT</option>
                                                     <option>Нефтедобыча</option>
+                                                    <option>Телекоммуникации и IT</option>
                                                 </select>
                                             </span>
 
@@ -1787,18 +1975,19 @@
 
                         <tbody>
                         <tr>
-                            <td colspan="5" class="table-subheader px-3 pt-3 text-xs-left">
+                            <td colspan="5" class="bg-for-card p-2 text-xs-left">
                                 <div class="row">
 
-                                    <div class="col-md-9">
-                                        <h4 class="font-weight-sbold font-weight-light pr-2">Запросы
+                                    <div class="col-md-8">
+                                        <h4 class="font-weight-light">Запросы
                                             журналистов на тему:<br>
-                                            <span class="font-weight-sbold">&laquo;нефть, газ&raquo;</span>, все
-                                            отрасли, все
-                                            города</h4>
+                                            <span class="font-weight-bold">нефть, газ —</span>
+                                            <span class="text-muted font-weight-bold">все отрасли, все
+                                                города</span>
+                                        </h4>
                                     </div>
 
-                                    <div class="col-md-3">
+                                    <div class="col-md-4">
                                         <div class="float-md-right">
                                             <button class="btn btn-link">
                                                 <i class="material-icons"
@@ -1827,7 +2016,6 @@
                         <tr>
                             <td>
                                 <a href="#"><i class="material-icons">star_border</i></a>
-                                <div class="text-primary font-lg" title="Новый запрос">●</div>
                             </td>
                             <td scope="row">
                                 <div class="media">
@@ -1893,6 +2081,186 @@
             </div>
 
             <div class="modal-footer">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Edit query in modal window 1 -->
+<div class="modal modal-wide" id="modal-query-edit-2" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Изменение подписки</h4>
+            </div>
+
+            <div class="modal-body">
+                <div class="card">
+
+                    <table class="table table-responsive table-main">
+
+                        <thead>
+                        <tr>
+                            <td colspan="2">
+
+                                <form>
+
+                                    <div class="input-group input-group-sm input-group-table">
+
+                                            <span class="input-group-addon p-0">
+                                                <select class="custom-select select-small select-transparent py-0 h-100">
+                                                    <option>Все отрасли</option>
+                                                    <option>IT</option>
+                                                    <option>Нефтедобыча</option>
+                                                    <option selected>Телекоммуникации и IT</option>
+                                                </select>
+                                            </span>
+
+                                        <input type="search" class="form-control"
+                                               placeholder="Поиск среди всех запросов" value="">
+
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-sm btn-secondary" type="button">
+                                                    <span class="font-xs font-weight-sbold">Найти</span>
+                                                </button>
+                                            </span>
+
+                                    </div>
+
+                                </form>
+
+                            </td>
+                            <td>Дедлайн</td>
+                            <td>Ответы (принятые)</td>
+                            <td>
+                                <form>
+                                    <select class="custom-select select-small">
+                                        <option selected>Все города</option>
+                                        <option disabled>─────────────</option>
+                                        <option>Федеральные СМИ</option>
+                                        <option>Региональные СМИ</option>
+                                        <option disabled>─────────────</option>
+                                        <option>Москва</option>
+                                        <option>Комсомольск-на-Амуре</option>
+                                    </select>
+                                </form>
+                            </td>
+
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr>
+                            <td colspan="5" class="bg-for-card p-2 text-xs-left">
+                                <div class="row">
+
+                                    <div class="col-md-8">
+                                        <h4 class="font-weight-light">Запросы
+                                            журналистов на тему:<br>
+                                            <span class="text-muted font-weight-bold">телекоммуникации и IT, все
+                                                города</span>
+                                        </h4>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="float-md-right">
+                                            <button class="btn btn-link">
+                                                <i class="material-icons"
+                                                   data-toggle="tooltip"
+                                                   data-placement="top"
+                                                   data-trigger="hover"
+                                                   title="Сохранить изменения">save</i>
+                                            </button>
+
+                                            <button class="btn btn-link">
+                                                <i class="material-icons"
+                                                   data-toggle="tooltip"
+                                                   data-placement="top"
+                                                   data-trigger="hover"
+                                                   title="Очистить результаты">clear</i>
+                                            </button>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <a href="#"><i class="material-icons">star_border</i></a>
+                            </td>
+                            <td scope="row">
+                                <div class="media">
+                                    <a class="media-left float-xs-none" href="#">
+                                        <img class="media-object rounded-circle" src="img/avatar_default.jpg"
+                                             width="35"
+                                             height="35"
+                                             data-toggle="popover"
+                                             data-trigger="hover"
+                                             data-placement="right"
+                                             data-content="Быстрая карточка пользователя">
+                                    </a>
+                                    <div class="media-body">
+                                        <p class="media-heading font-weight-sbold"><a href="#">хеджирование валютных
+                                            рисков экспортеров и импортеров</a></p>
+                                        <div><a href="#" class="text-muted">Раскрыть СМИ</a></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><span class="tag tag-deadline tag-pill">7 часов</span></td>
+                            <td>
+                                <button type="button" class="btn btn-link"><i class="material-icons">lock_outline
+                                </i></button>
+                            </td>
+                            <td>Петербург</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <a href="#"><i class="material-icons">star_border</i></a>
+                            </td>
+                            <td scope="row">
+                                <div class="media">
+                                    <a class="media-left float-xs-none" href="#">
+                                        <img class="media-object rounded-circle" src="img/avatar_default.jpg"
+                                             width="35"
+                                             height="35"
+                                             data-toggle="popover"
+                                             data-trigger="hover"
+                                             data-placement="right"
+                                             data-content="Быстрая карточка пользователя">
+                                    </a>
+                                    <div class="media-body">
+                                        <p class="media-heading font-weight-sbold"><a href="#">хеджирование валютных
+                                            рисков экспортеров и импортеров</a></p>
+                                        <div><a href="#" class="text-muted">Раскрыть СМИ</a></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><span class="tag tag-deadline tag-pill">7 часов</span></td>
+                            <td>
+                                <button type="button" class="btn btn-link"><i class="material-icons">lock_outline
+                                </i></button>
+                            </td>
+                            <td>Петербург</td>
+                        </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
 
         </div>
@@ -1920,7 +2288,6 @@
 </div>
 
 <!-- Confirm deleting a subscription. Modal -->
-
 <div class="modal modal-confirm" id="modal-confirm-2" tabindex="-1">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -1941,6 +2308,7 @@
 
 <!--build:js js/app.js -->
 <script src="js/vendors/jquery.js"></script>
+<script src="js/vendors/affix.js"></script>
 <script src="js/vendors/tether.js"></script>
 <script src="js/vendors/bootstrap.js"></script>
 <script src="js/main.js"></script>
