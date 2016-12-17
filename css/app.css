@@ -5152,7 +5152,6 @@ html {
 
 body {
   padding-top: 7.5rem;
-  padding-bottom: 5rem;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -5265,6 +5264,9 @@ p {
 .no-radius {
   border-radius: 0; }
 
+.no-borders {
+  border: none; }
+
 .navbar-main .nav-item {
   font-weight: 700; }
   .navbar-main .nav-item + .nav-item {
@@ -5344,6 +5346,11 @@ p {
   font-size: 0.7rem;
   color: blue;
   font-weight: 500; }
+
+.tag-new-inchat {
+  position: absolute;
+  top: .55rem;
+  right: 0; }
 
 .tag-deadline {
   background: transparent;
@@ -5774,6 +5781,30 @@ input[type="search"]::-webkit-search-cancel-button {
     border-right: 8px solid #f0f0f0;
     left: -8px;
     top: 10px; }
+  .bubble.bubble-new {
+    animation: blueFading .5s 3s backwards; }
+
+@keyframes blueFading {
+  0% {
+    background-color: blue;
+    color: #fff; } }
+
+.bubble-white {
+  background: #fff;
+  border: 1px solid #ddd; }
+  .bubble-white:after {
+    border-right: 8px solid #ddd; }
+  .bubble-white:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 8px solid #fff;
+    left: -6px;
+    top: 10px;
+    z-index: 1; }
 
 .anim-pulse {
   animation: pulse 3s 3 both;
@@ -5830,3 +5861,12 @@ input[type="search"]::-webkit-search-cancel-button {
   display: none; }
   .tab-filter.active {
     display: block; }
+
+.list-group .list-group-item.active {
+  background-color: #f0f0f0;
+  border-color: #ddd; }
+  .list-group .list-group-item.active .list-group-item-heading {
+    color: #000; }
+
+.list-group .list-group-item:hover {
+  background-color: #f0f0f0; }
