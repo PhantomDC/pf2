@@ -5870,3 +5870,14 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .list-group .list-group-item:hover {
   background-color: #f0f0f0; }
+
+.scroll-test .list-group-item:first-child {
+  border-top: none; }
+
+.scroll-test .list-group-item:last-child {
+  border-bottom-right-radius: 0 !important;
+  border-bottom-left-radius: 0 !important; }
+
+.scroll-test .list-group-item {
+  border-left: none;
+  border-right: none; }
