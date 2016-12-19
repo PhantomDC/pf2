@@ -308,7 +308,7 @@
                                                      height="35"
                                                      data-toggle="popover"
                                                      data-trigger="click"
-                                                     data-placement="right"
+                                                     data-placement="bottom"
                                                      data-content='
 
                                     <div class="media">
@@ -327,20 +327,20 @@
                                                 <div class="divider my-half"></div>
                                                 <div class="font-xs text-gray">
 
-                                                    <div>Активный запрос</div>
+                                                    <div>Последний запрос</div>
                                                     <a href="query.html">Что делать, если вам настойчиво предлагают продать компанию, а вы не хотите?</a>
                                                 </div>
 
                                                 <div class="divider my-half"></div>
+
                                                 <div class="font-xs py-half">
 
-
-                                                        <a class="btn btn-sm btn-secondary">
-                                                        Сообщение
+                                                        <a class="btn btn-sm btn-secondary font-xs font-weight-sbold">
+                                                        <i class="material-icons font-md">message</i> Сообщение
                                                         </a>
 
-                                                        <a class="btn btn-sm btn-secondary">
-                                                        В контакты
+                                                        <a class="btn btn-sm btn-secondary btn-toggle active">
+                                                        <i class="material-icons font-md">person_add</i>  В контактах
                                                         </a>
 
                                                 </div>
@@ -503,14 +503,19 @@
                                         <div class="media-body">
                                             <p class="media-heading"><a href="query.html">хеджирование валютных
                                                 рисков экспортеров и импортеров</a></p>
-                                            <div><a href="#" class="text-muted">Раскрыть СМИ</a></div>
+                                            <div><a href="#" class="text-gray font-xs">Раскрыть СМИ</a></div>
                                         </div>
                                     </div>
                                 </td>
                                 <td><span class="tag tag-deadline tag-pill">7 часов</span></td>
                                 <td>
-                                    <button type="button" class="btn btn-link"><i class="material-icons">lock_outline
-                                    </i></button>
+                                    <button type="button" class="btn btn-link">
+                                        <i class="material-icons"
+                                           title="Доступен пока только для про-аккаунтов"
+                                           data-toggle="tooltip"
+                                           data-trigger="hover">lock_outline
+                                        </i>
+                                    </button>
                                 </td>
                                 <td>Петербург</td>
                             </tr>
@@ -531,7 +536,7 @@
                                         <div class="media-body">
                                             <p class="media-heading"><a href="query.html">хеджирование валютных
                                                 рисков экспортеров и импортеров</a></p>
-                                            <div class="font-italic text-muted">Анонимный из крупного СМИ</div>
+                                            <div class="font-xs text-gray">Анонимный из крупного СМИ</div>
                                         </div>
                                     </div>
                                 </td>
@@ -1165,8 +1170,9 @@
                                 </td>
                                 <td><span class="tag tag-deadline tag-pill">7 часов</span></td>
                                 <td>
-                                    <button type="button" class="btn btn-link"><i class="material-icons">lock_outline
-                                    </i></button>
+                                    <button type="button" class="btn btn-link">
+                                        <i class="material-icons">lock_outline</i>
+                                    </button>
                                 </td>
                                 <td>Петербург</td>
                             </tr>
@@ -1473,7 +1479,8 @@
 
                                             <span class="input-group-addon p-0">
                                                 <select
-                                                        class="custom-select no-radius select-small select-transparent py-0 h-100" disabled>
+                                                        class="custom-select no-radius select-small select-transparent py-0 h-100"
+                                                        disabled>
                                                     <option>Все отрасли</option>
                                                     <option>IT</option>
                                                     <option>Нефтедобыча</option>

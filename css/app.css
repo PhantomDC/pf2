@@ -5157,6 +5157,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
   font-size: .98em; }
+  body .banner-top-box {
+    position: relative;
+    top: -40px;
+    margin: auto;
+    width: 1140px; }
 
 a {
   cursor: pointer; }
