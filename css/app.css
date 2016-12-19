@@ -5753,7 +5753,7 @@ input[type="search"]::-webkit-search-cancel-button {
     [data-toggle="collapse"].toggler-collapsing:before {
       content: '';
       position: absolute;
-      bottom: .5rem;
+      bottom: calc(50% - 0.25rem);
       left: calc(50% - 0.25rem);
       -ms-transform: rotate(135deg);
           transform: rotate(135deg);
@@ -5761,6 +5761,8 @@ input[type="search"]::-webkit-search-cancel-button {
       height: 0.5rem;
       border-left: 2px solid blue;
       border-bottom: 2px solid blue; }
+  [data-toggle="collapse"].toggler-collapsing.toggler-comment:before {
+    display: none; }
 
 .collapsed {
   cursor: s-resize; }
@@ -5851,6 +5853,17 @@ input[type="search"]::-webkit-search-cancel-button {
 .text-truncate-2 {
   line-height: 1.5em;
   height: 3em; }
+
+.truncate-bottom {
+  position: relative; }
+  .truncate-bottom:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4rem;
+    background: -webkit-linear-gradient(bottom, #fff, transparent); }
 
 .pagination .page-item .page-link {
   color: #888;
