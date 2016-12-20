@@ -5122,8 +5122,8 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   position: relative; }
   [class*="pficon-"]:after {
     content: "";
-    width: 16px;
-    height: 16px;
+    width: 1rem;
+    height: 1rem;
     display: inline-block;
     background-repeat: no-repeat;
     background-position: center;
@@ -5162,6 +5162,22 @@ body {
     top: -40px;
     margin: auto;
     width: 1140px; }
+
+.num, .num-sm {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 4.6rem;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  font-weight: 300; }
+  .num span, .num-sm span {
+    display: block;
+    font-size: 1rem;
+    color: #888; }
+
+.num-sm {
+  font-size: 2.2rem; }
+  .num-sm span {
+    font-size: 0.8rem; }
 
 a {
   cursor: pointer; }
@@ -5414,9 +5430,6 @@ p {
   font-weight: 600;
   letter-spacing: .3px;
   color: #888; }
-
-.tag-theme {
-  padding-right: 0.3rem; }
 
 .tag-floated-search {
   position: relative;
@@ -5907,3 +5920,6 @@ input[type="search"]::-webkit-search-cancel-button {
 .scroll-test .list-group-item {
   border-left: none;
   border-right: none; }
+
+.no-shadows {
+  box-shadow: none; }
