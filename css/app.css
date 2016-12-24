@@ -5510,16 +5510,6 @@ input[type="search"]::-webkit-search-cancel-button {
 [class*="card-outline-"] {
   box-shadow: none; }
 
-.card-columns {
-  -moz-column-count: 2;
-  column-count: 3; }
-
-@media (min-width: 1200px) {
-  .card-columns-4 {
-    -moz-column-count: 4;
-         column-count: 4;
-    -webkit-column-count: 4; } }
-
 @media (max-width: 991px) {
   .sidebar.card {
     background: white;
@@ -5944,6 +5934,17 @@ input[type="search"]::-webkit-search-cancel-button {
   opacity: 0; }
   .download-file:hover .download-file-label {
     opacity: 1; }
+
+.row.equal {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .row.equal [class*="col-"] {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column; }
 
 header {
   position: fixed;
