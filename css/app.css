@@ -5507,6 +5507,19 @@ input[type="search"]::-webkit-search-cancel-button {
     border-top-left-radius: 0.26rem;
     border-top-right-radius: 0.26rem; }
 
+[class*="card-outline-"] {
+  box-shadow: none; }
+
+.card-columns {
+  -moz-column-count: 2;
+  column-count: 3; }
+
+@media (min-width: 1200px) {
+  .card-columns-4 {
+    -moz-column-count: 4;
+         column-count: 4;
+    -webkit-column-count: 4; } }
+
 @media (max-width: 991px) {
   .sidebar.card {
     background: white;
