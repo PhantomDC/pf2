@@ -216,42 +216,70 @@
 
                     <div class="card">
 
-                        <div class="input-group input-group-sm p-1">
-
-                            <div class="input-group-addon bg-trans p-0">
-                                <select class="custom-select select-xs select-transparent py-0 h-100">
-                                    <option>Все отрасли</option>
-                                    <option>IT</option>
-                                    <option selected>Нефтедобыча</option>
-                                    <option>Промышленность, производство</option>
-                                </select>
-                            </div>
-
-                            <div class="input-group-addon bg-trans p-0">
-                                <select class="custom-select select-xs select-transparent py-0 h-100">
-                                    <option selected>Все города</option>
-                                    <option disabled>─────────────</option>
-                                    <option>Федеральные СМИ</option>
-                                    <option>Региональные СМИ</option>
-                                    <option disabled>─────────────</option>
-                                    <option>Москва</option>
-                                    <option>Комсомольск-на-Амуре</option>
-                                </select>
-                            </div>
-
-                            <input type="search" class="form-control tag-floated-search" id="search"
-                                   placeholder="Поиск в отрасли &laquo;Нефтедобыча&raquo;" required>
-
-                            <span class="input-group-btn">
-                                <button class="btn btn-sm btn-primary" type="button">
-                                    <span class="font-weight-sbold">Найти</span>
-                                </button>
-                            </span>
-
-                        </div>
-
                         <table class="table table-responsive table-main">
 
+                            <thead>
+                            <tr>
+                                <td colspan="2">
+
+                                    <form>
+
+                                        <div class="input-group input-group-sm input-group-table">
+
+                                            <span class="input-group-addon p-0">
+                                                <select class="custom-select select-small select-transparent py-0 h-100">
+                                                    <option>Все отрасли</option>
+                                                    <option>IT</option>
+                                                    <option selected>Нефтедобыча</option>
+                                                    <option>Промышленность, производство</option>
+                                                </select>
+                                            </span>
+
+
+                                            <input type="search" class="form-control tag-floated-search" id="search"
+                                                   placeholder="Поиск в отрасли &laquo;Нефтедобыча&raquo;" required>
+                                            <label for="search">Поиск в отрасли &laquo;Нефтедобыча&raquo;:
+                                            </label>
+
+
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-sm btn-secondary" type="button">
+                                                    <span class="font-xs font-weight-sbold">Найти</span>
+                                                </button>
+                                            </span>
+
+                                        </div>
+
+                                    </form>
+
+                                </td>
+                                <td>Дедлайн</td>
+                                <td>Ответы (принятые)</td>
+                                <td>
+                                    <form>
+                                        <select class="custom-select select-small">
+                                            <option selected>Все города</option>
+                                            <option disabled>─────────────</option>
+                                            <option>Федеральные СМИ</option>
+                                            <option>Региональные СМИ</option>
+                                            <option disabled>─────────────</option>
+                                            <option>Москва</option>
+                                            <option>Комсомольск-на-Амуре</option>
+                                        </select>
+                                    </form>
+                                </td>
+
+                            </tr>
+                            <!--<tr class="alert alert-new">
+                                <td colspan="5">
+                                    <button type="button" data-dismiss="alert" class="close">&times;</button>
+                                    <a href="">
+                                        <i class="material-icons font-lg">new_releases</i>
+                                        5 новых запросов на сайте
+                                    </a>
+                                </td>
+                            </tr>-->
+                            </thead>
 
                             <tbody>
                             <tr class="bg-special">
