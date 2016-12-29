@@ -5435,9 +5435,14 @@ p {
     color: #555;
     z-index: 5; }
 
-.select-xs {
+.select-custom-2 {
+  max-width: 140px;
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
   font-size: 0.75rem;
-  max-width: 140px; }
+  font-weight: 500;
+  outline: none; }
 
 /* Select for table */
 select.select-small {
