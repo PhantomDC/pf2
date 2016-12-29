@@ -5408,6 +5408,9 @@ p {
   font-weight: 600;
   letter-spacing: .3px;
   color: #888; }
+  .tag-upper.tag-upper-small {
+    font-size: .65rem;
+    white-space: nowrap; }
 
 .tag-floated-search {
   position: relative;
