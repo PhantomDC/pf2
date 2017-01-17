@@ -156,80 +156,68 @@
             <!-- CONTENT -->
             <div class="tab-content">
 
-                <!-- All Queries -->
                 <div class="tab-pane active" id="all-queries">
+
 
                     <div class="card">
 
-                        <table class="table table-responsive table-main">
+                        <!-- Search -->
+                        <div class="card-header p-1 bg-trans bb-1">
 
-                            <thead>
-                            <tr>
-                                <td colspan="2">
+                            <div class="input-group input-group-sm">
 
-                                    <form>
+                                <div class="input-group-addon bg-trans p-0">
+                                    <select class="select-custom-2">
+                                        <option>Все отрасли</option>
+                                        <option>IT</option>
+                                        <option selected>Нефтедобыча</option>
+                                        <option>Промышленность, производство</option>
+                                    </select>
+                                </div>
 
-                                        <div class="input-group input-group-sm input-group-table">
+                                <div class="input-group-addon bg-trans p-0">
+                                    <select class="select-custom-2">
+                                        <option selected>Все города</option>
+                                        <option disabled>─────────────</option>
+                                        <option>Федеральные СМИ</option>
+                                        <option>Региональные СМИ</option>
+                                        <option disabled>─────────────</option>
+                                        <option>Москва</option>
+                                        <option>Комсомольск-на-Амуре</option>
+                                    </select>
+                                </div>
 
-                                            <span class="input-group-addon p-0">
-                                                <select class="custom-select select-small select-transparent py-0 h-100">
-                                                    <option selected>Все отрасли</option>
-                                                    <option>IT</option>
-                                                    <option>Нефтедобыча</option>
-                                                </select>
-                                            </span>
+                                <input type="search" class="form-control tag-floated-search" id="search"
+                                       placeholder="Поиск запросов в отрасли &laquo;Нефтедобыча&raquo;" required>
 
-                                            <input type="search" class="form-control"
-                                                   placeholder="Поиск среди всех запросов">
+                                <div class="input-group-btn">
+                                    <button class="btn btn-sm btn-primary" type="button">
+                                        <span class="font-weight-sbold">Найти</span>
+                                    </button>
+                                </div>
 
-                                            <span class="input-group-btn">
-                                                <button class="btn btn-sm btn-secondary" type="button">
-                                                    <span class="font-xs font-weight-sbold">Найти</span>
-                                                </button>
-                                            </span>
+                            </div>
 
-                                        </div>
+                        </div>
 
-                                    </form>
+                        <!-- Query 1 -->
+                        <div class="card-blockquote bg-special bt-1">
 
-                                </td>
-                                <td>Дедлайн</td>
-                                <td>Ответы (принятые)</td>
-                                <td>
-                                    <form>
-                                        <select class="custom-select select-small">
-                                            <option selected>Все города</option>
-                                            <option disabled>─────────────</option>
-                                            <option>Федеральные СМИ</option>
-                                            <option>Региональные СМИ</option>
-                                            <option disabled>─────────────</option>
-                                            <option>Москва</option>
-                                            <option>Комсомольск-на-Амуре</option>
-                                        </select>
-                                    </form>
-                                </td>
+                            <div class="row py-half">
 
-                            </tr>
-                            <!--<tr class="alert alert-new">
-                                <td colspan="5">
-                                    <button type="button" data-dismiss="alert" class="close">&times;</button>
-                                    <a href="">
-                                        <i class="material-icons font-lg">new_releases</i>
-                                        5 новых запросов на сайте
-                                    </a>
-                                </td>
-                            </tr>-->
-                            </thead>
+                                <div class="col-xs-2 col-sm-1 text-xs-center px-0">
 
-                            <tbody>
-                            <tr class="bg-special">
-                                <td>
                                     <a href="#"><i class="material-icons">star_border</i></a>
+
                                     <span class="pficon-fire d-block" title="Срочный запрос"></span>
-                                </td>
-                                <td scope="row">
+
+                                </div>
+
+                                <div class="col-sm-10 col-md-9 px-0">
+
                                     <div class="media">
-                                        <a class="media-left float-xs-none" href="#">
+                                        <a class="media-left" href="#">
+
                                             <div class="relative">
 
                                                 <img class="media-object rounded-circle" src="img/avatar-test5.png"
@@ -237,7 +225,7 @@
                                                      height="35"
                                                      data-toggle="popover"
                                                      data-trigger="click"
-                                                     data-placement="right"
+                                                     data-placement="bottom"
                                                      data-content='
 
                                     <div class="media">
@@ -256,20 +244,20 @@
                                                 <div class="divider my-half"></div>
                                                 <div class="font-xs text-gray">
 
-                                                    <div>Активный запрос</div>
+                                                    <div>Последний запрос</div>
                                                     <a href="query.html">Что делать, если вам настойчиво предлагают продать компанию, а вы не хотите?</a>
                                                 </div>
 
                                                 <div class="divider my-half"></div>
+
                                                 <div class="font-xs py-half">
 
-
-                                                        <a class="btn btn-sm btn-secondary">
-                                                        Сообщение
+                                                        <a class="btn btn-sm btn-secondary font-xs font-weight-sbold">
+                                                        <i class="material-icons font-md">message</i> Написать
                                                         </a>
 
-                                                        <a class="btn btn-sm btn-secondary">
-                                                        В контакты
+                                                        <a class="btn btn-sm btn-secondary btn-toggle active">
+                                                        <i class="material-icons font-md">person_add</i>  В контактах
                                                         </a>
 
                                                 </div>
@@ -279,99 +267,58 @@
 
 
                                                      '
+                                                     data-html="true">
 
-
-                                                     data-html="true"
-                                                     data-template='<div class="popover" role="tooltip"><div class="popover-arrow"></div><h3 class="popover-title"></h3><div class="popover-content"></div></div>'>
                                                 <i class="material-icons tag-chevron"
-                                                   title="Проверенный пользователь">verified_user</i>
+                                                   title="Проверенный пользователь">verified_user
+                                                </i>
+
                                             </div>
+
                                         </a>
                                         <div class="media-body">
                                             <p class="media-heading"><a href="query.html" class="font-weight-sbold">Что
-                                                делать,
-                                                если
-                                                вам
-                                                настойчиво предлагают продать компанию, а вы не хотите?</a></p>
-                                            <div>Секрет фирмы</div>
+                                                делать, если вам настойчиво предлагают продать компанию, а вы не
+                                                хотите?</a></p>
+                                            <div>Секрет фирмы, Москва</div>
+
+                                            <span class="tag tag-deadline tag-pill hidden-sm-up mt-half">4 часа</span>
+
                                         </div>
                                     </div>
-                                </td>
-                                <td><span class="tag tag-deadline tag-pill">4 часа</span></td>
-                                <td>34(3)</td>
-                                <td>Москва</td>
-                            </tr>
 
-                            <tr class="bg-special">
-                                <td>
+                                </div>
+
+                                <div class="col-sm-12 col-md-2 pl-3 hidden-sm-down">
+                                    <span class="tag tag-deadline tag-pill"
+                                          data-toggle="tooltip"
+                                          data-placement="left"
+                                          data-trigger="hover"
+                                          title="Время до дедлайна">4 часа</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Query 2 -->
+                        <div class="card-blockquote bg-special bt-1">
+
+                            <div class="row py-half">
+
+                                <div class="col-xs-2 col-sm-1 text-xs-center px-0">
+
                                     <a href="#"><i class="material-icons">star_border</i></a>
+
                                     <span class="pficon-fire d-block" title="Срочный запрос"></span>
-                                </td>
-                                <td scope="row">
+
+                                </div>
+
+                                <div class="col-sm-10 col-md-9 px-0">
+
                                     <div class="media">
-                                        <a class="media-left float-xs-none" href="#">
-                                            <div class="relative">
-                                                <img class="media-object rounded-circle" src="img/avatar-test.png"
-                                                     width="35"
-                                                     height="35"
-                                                     data-toggle="popover"
-                                                     data-trigger="hover"
-                                                     data-placement="right"
-                                                     data-content="Быстрая карточка пользователя">
-                                                <i class="material-icons tag-chevron"
-                                                   title="Проверенный пользователь">verified_user</i>
-                                            </div>
-                                        </a>
-                                        <div class="media-body">
-                                            <p class="media-heading"><a href="query.html" class="font-weight-sbold">Рынок
-                                                настольных игр</a></p>
-                                            <div class="d-inline-block">Коммерсант</div>
-                                        </div>
-                                    </div>
+                                        <a class="media-left" href="#">
 
-
-                                </td>
-                                <td><span class="tag tag-deadline tag-pill">4 часа</span></td>
-                                <td>34(3)</td>
-                                <td>Москва</td>
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <a href="#"><i class="material-icons">star_border</i></a>
-                                </td>
-                                <td scope="row">
-                                    <div class="media">
-                                        <a class="media-left float-xs-none" href="#">
-                                            <img class="media-object rounded-circle" src="img/avatar-test5.png"
-                                                 width="35"
-                                                 height="35"
-                                                 data-toggle="popover"
-                                                 data-trigger="hover"
-                                                 data-placement="right"
-                                                 data-content="Быстрая карточка пользователя">
-                                        </a>
-                                        <div class="media-body">
-                                            <p class="media-heading"><a href="query.html" class="font-weight-sbold">Суровая
-                                                зима
-                                                для
-                                                бюджета</a></p>
-                                            <div>Вестник Московского государственного университета им. М.В.
-                                                Ломоносова
-                                            </div>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td><span class="tag tag-deadline tag-pill">2 дня</span></td>
-                                <td>7(5)</td>
-                                <td>Москва</td>
-                            </tr>
-
-                            <tr>
-                                <td><a href="#"><i class="material-icons">star</i></a></td>
-                                <td scope="row">
-                                    <div class="media">
-                                        <a class="media-left float-xs-none" href="#">
                                             <img class="media-object rounded-circle" src="img/avatar-test3.jpg"
                                                  width="35"
                                                  height="35"
@@ -379,24 +326,104 @@
                                                  data-trigger="hover"
                                                  data-placement="right"
                                                  data-content="Быстрая карточка пользователя">
+
                                         </a>
                                         <div class="media-body">
-                                            <p class="media-heading"><a href="query.html">Фитнес-клубы - какие
-                                                новые форматы востребованы на рынке?</a></p>
-                                            <div>Компания</div>
+                                            <p class="media-heading"><a href="query.html" class="">Рынок
+                                                настольных игр</a></p>
+                                            <div>Коммерсант, Москва
+                                            </div>
+
+                                            <span class="tag tag-deadline tag-pill hidden-sm-up mt-half">2 дня</span>
+
                                         </div>
                                     </div>
-                                </td>
-                                <td><span class="tag tag-deadline tag-pill">10 дней</span></td>
-                                <td>5(5)</td>
-                                <td>Комсомольск-на-Амуре</td>
-                            </tr>
 
-                            <tr>
-                                <td><a href="#"><i class="material-icons">star</i></a></td>
-                                <td scope="row">
+                                </div>
+
+                                <div class="col-sm-12 col-md-2 pl-3 hidden-sm-down">
+                                    <span class="tag tag-deadline tag-pill"
+                                          data-toggle="tooltip"
+                                          data-placement="left"
+                                          data-trigger="hover"
+                                          title="Время до дедлайна">2 дня</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Query 3 -->
+                        <div class="card-blockquote bt-1">
+
+                            <div class="row py-half">
+
+                                <div class="col-xs-2 col-sm-1 text-xs-center px-0">
+
+                                    <a href="#"><i class="material-icons">star</i></a>
+
+
+                                </div>
+
+                                <div class="col-sm-10 col-md-9 px-0">
+
                                     <div class="media">
-                                        <a class="media-left float-xs-none" href="#">
+                                        <a class="media-left" href="#">
+
+                                            <img class="media-object rounded-circle" src="img/avatar-test.png"
+                                                 width="35"
+                                                 height="35"
+                                                 data-toggle="popover"
+                                                 data-trigger="hover"
+                                                 data-placement="right"
+                                                 data-content="Быстрая карточка пользователя">
+
+                                        </a>
+
+
+                                        <div class="media-body">
+                                            <p class="media-heading"><a href="query.html" class="">
+                                                Фитнес-клубы - какие новые форматы востребованы на рынке?</a></p>
+                                            <div>Компания,
+                                                Москва
+                                            </div>
+
+                                            <span class="tag tag-deadline tag-pill hidden-sm-up mt-half">10 часов</span>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-sm-12 col-md-2 pl-3 hidden-sm-down">
+                                    <span class="tag tag-deadline tag-pill"
+                                          data-toggle="tooltip"
+                                          data-placement="left"
+                                          data-trigger="hover"
+                                          title="Время до дедлайна">10 часов</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Query 4 -->
+                        <div class="card-blockquote bt-1">
+
+                            <div class="row py-half">
+
+                                <div class="col-xs-2 col-sm-1 text-xs-center px-0">
+
+                                    <a href="#"><i class="material-icons">star_border</i></a>
+
+
+                                </div>
+
+                                <div class="col-sm-10 col-md-9 px-0">
+
+                                    <div class="media">
+                                        <a class="media-left" href="#">
+
                                             <img class="media-object rounded-circle" src="img/avatar-test4.jpg"
                                                  width="35"
                                                  height="35"
@@ -404,26 +431,171 @@
                                                  data-trigger="hover"
                                                  data-placement="right"
                                                  data-content="Быстрая карточка пользователя">
+
                                         </a>
+
+
                                         <div class="media-body">
-                                            <p class="media-heading"><a href="query.html">Для программы про
-                                                избавление от ненужных вещей ищем героя (блогера), который
-                                                реализует
-                                                одежду и другие вещи через приложения</a></p>
-                                            <div>Первый</div>
+                                            <p class="media-heading"><a href="query.html" class="font-weight-sbold">
+                                                Суровая зима для бюджета</a></p>
+                                            <div>
+                                                Вестник Московского государственного университета им. М.В. Ломоносова,
+                                                Москва
+                                            </div>
+
+                                            <span class="tag tag-deadline tag-pill hidden-sm-up mt-half">5 дней</span>
+
                                         </div>
                                     </div>
-                                </td>
-                                <td><span class="tag tag-deadline tag-pill">1 час</span></td>
-                                <td>9(1)</td>
-                                <td>Москва</td>
-                            </tr>
 
-                            <tr>
-                                <td><a href="#"><i class="material-icons">star_border</i></a></td>
-                                <td scope="row">
+                                </div>
+
+                                <div class="col-sm-12 col-md-2 pl-3 hidden-sm-down">
+                                    <span class="tag tag-deadline tag-pill"
+                                          data-toggle="tooltip"
+                                          data-placement="left"
+                                          data-trigger="hover"
+                                          title="Время до дедлайна">5 дней</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Query 5 -->
+                        <div class="card-blockquote bt-1">
+
+                            <div class="row py-half">
+
+                                <div class="col-xs-2 col-sm-1 text-xs-center px-0">
+
+                                    <a href="#"><i class="material-icons">star_border</i></a>
+
+
+                                </div>
+
+                                <div class="col-sm-10 col-md-9 px-0">
+
                                     <div class="media">
-                                        <a class="media-left float-xs-none" href="#">
+                                        <a class="media-left" href="#">
+
+                                            <img class="media-object rounded-circle" src="img/avatar-test6.png"
+                                                 width="35"
+                                                 height="35"
+                                                 data-toggle="popover"
+                                                 data-trigger="hover"
+                                                 data-placement="right"
+                                                 data-content="Быстрая карточка пользователя">
+
+                                        </a>
+
+
+                                        <div class="media-body">
+                                            <p class="media-heading">
+                                                <a href="query.html" class="">
+                                                    Для программы про избавление от ненужных вещей ищем героя (блогера),
+                                                    который реализует одежду и другие вещи через приложения
+                                                </a>
+                                            </p>
+                                            <div class="text-gray-dark">
+                                                <span class="">Первый</span>, Москва
+                                            </div>
+
+                                            <span class="tag tag-deadline tag-pill hidden-sm-up mt-half">
+                                                1 неделя
+                                            </span>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-sm-12 col-md-2 pl-3 hidden-sm-down">
+                                    <span class="tag tag-deadline tag-pill"
+                                          data-toggle="tooltip"
+                                          data-placement="left"
+                                          data-trigger="hover"
+                                          title="Время до дедлайна">1 неделя</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Query 6 -->
+                        <div class="card-blockquote bt-1">
+
+                            <div class="row py-half">
+
+                                <div class="col-xs-2 col-sm-1 text-xs-center px-0">
+
+                                    <a href="#"><i class="material-icons">star_border</i></a>
+
+
+                                </div>
+
+                                <div class="col-sm-10 col-md-9 px-0">
+
+                                    <div class="media">
+                                        <a class="media-left" href="#">
+
+                                            <img class="media-object rounded-circle" src="img/avatar-test6.png"
+                                                 width="35"
+                                                 height="35"
+                                                 data-toggle="popover"
+                                                 data-trigger="hover"
+                                                 data-placement="right"
+                                                 data-content="Быстрая карточка пользователя">
+
+                                        </a>
+
+
+                                        <div class="media-body">
+                                            <p class="media-heading">
+                                                <a href="query.html" class="">
+                                                    хеджирование валютных рисков экспортеров и импортеров
+                                                </a>
+                                            </p>
+                                            <div><a href="#" class="text-gray font-xs">Раскрыть СМИ</a></div>
+
+                                            <span class="tag tag-deadline tag-pill hidden-sm-up mt-half">
+                                                7 часов
+                                            </span>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-sm-12 col-md-2 pl-3 hidden-sm-down">
+                                    <span class="tag tag-deadline tag-pill"
+                                          data-toggle="tooltip"
+                                          data-placement="left"
+                                          data-trigger="hover"
+                                          title="Время до дедлайна">7 часов</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Query 7 -->
+                        <div class="card-blockquote bt-1">
+
+                            <div class="row py-half">
+
+                                <div class="col-xs-2 col-sm-1 text-xs-center px-0">
+
+                                    <a href="#"><i class="material-icons">star_border</i></a>
+
+
+                                </div>
+
+                                <div class="col-sm-10 col-md-9 px-0">
+
+                                    <div class="media">
+                                        <a class="media-left" href="#">
+
                                             <img class="media-object rounded-circle" src="img/avatar_default.jpg"
                                                  width="35"
                                                  height="35"
@@ -431,27 +603,56 @@
                                                  data-trigger="hover"
                                                  data-placement="right"
                                                  data-content="Быстрая карточка пользователя">
+
                                         </a>
+
+
                                         <div class="media-body">
-                                            <p class="media-heading"><a href="query.html">хеджирование валютных
-                                                рисков экспортеров и импортеров</a></p>
-                                            <div><a href="#" class="text-muted">Раскрыть СМИ</a></div>
+                                            <p class="media-heading">
+                                                <a href="query.html" class="font-weight-sbold">
+                                                    хеджирование валютных рисков экспортеров и импортеров
+                                                </a>
+                                            </p>
+                                            <div class="font-xs text-gray">Анонимный из крупного СМИ</div>
+
+                                            <span class="tag tag-deadline tag-pill hidden-sm-up mt-half">
+                                                7 часов
+                                            </span>
+
                                         </div>
                                     </div>
-                                </td>
-                                <td><span class="tag tag-deadline tag-pill">7 часов</span></td>
-                                <td>
-                                    <button type="button" class="btn btn-link"><i class="material-icons">lock_outline
-                                    </i></button>
-                                </td>
-                                <td>Петербург</td>
-                            </tr>
 
-                            <tr>
-                                <td><a href="#"><i class="material-icons">star_border</i></a></td>
-                                <td scope="row">
+                                </div>
+
+                                <div class="col-sm-12 col-md-2 pl-3 hidden-sm-down">
+                                    <span class="tag tag-deadline tag-pill"
+                                          data-toggle="tooltip"
+                                          data-placement="left"
+                                          data-trigger="hover"
+                                          title="Время до дедлайна">7 часов</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Query 8 -->
+                        <div class="card-blockquote bt-1">
+
+                            <div class="row py-half">
+
+                                <div class="col-xs-2 col-sm-1 text-xs-center px-0">
+
+                                    <a href="#"><i class="material-icons">star_border</i></a>
+
+
+                                </div>
+
+                                <div class="col-sm-10 col-md-9 px-0">
+
                                     <div class="media">
-                                        <a class="media-left float-xs-none" href="#">
+                                        <a class="media-left" href="#">
+
                                             <img class="media-object rounded-circle" src="img/avatar_default.jpg"
                                                  width="35"
                                                  height="35"
@@ -459,102 +660,41 @@
                                                  data-trigger="hover"
                                                  data-placement="right"
                                                  data-content="Быстрая карточка пользователя">
+
                                         </a>
+
+
                                         <div class="media-body">
-                                            <p class="media-heading"><a href="query.html">хеджирование валютных
-                                                рисков экспортеров и импортеров</a></p>
-                                            <div class="font-italic text-muted">Анонимный из крупного СМИ</div>
+                                            <p class="media-heading"><a href="query.html" class="font-weight-sbold">
+                                                Суровая зима для бюджета</a></p>
+                                            <div class="text-gray-dark"><span class="">
+                                                Вестник МГУ им. М.В. Ломоносова</span>,
+                                                Москва
+                                            </div>
+
+                                            <span class="tag tag-deadline tag-pill hidden-sm-up mt-half">5 дней</span>
+
                                         </div>
+
                                     </div>
-                                </td>
-                                <td><span class="tag tag-deadline tag-pill">7 часов</span></td>
-                                <td>0(0)</td>
-                                <td>Петербург</td>
-                            </tr>
 
-                            <tr>
-                                <td><a href="#"><i class="material-icons">star_border</i></a></td>
-                                <td scope="row">
-                                    <div class="media">
-                                        <a class="media-left float-xs-none" href="#">
-                                            <img class="media-object rounded-circle" src="img/avatar-test6.png"
-                                                 width="35"
-                                                 height="35"
-                                                 data-toggle="popover"
-                                                 data-trigger="hover"
-                                                 data-placement="right"
-                                                 data-content="Быстрая карточка пользователя">
-                                        </a>
-                                        <div class="media-body">
-                                            <p class="media-heading"><a href="query.html">хеджирование валютных
-                                                рисков экспортеров и импортеров</a></p>
-                                            <div>РБК (СПб и ЛО)</div>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td><span class="tag tag-deadline tag-pill">7 часов</span></td>
-                                <td>345(34)</td>
-                                <td>Петербург</td>
-                            </tr>
+                                </div>
 
-                            <tr>
-                                <td><a href="#"><i class="material-icons">star_border</i></a></td>
-                                <td scope="row">
-                                    <div class="media">
-                                        <a class="media-left float-xs-none" href="#">
-                                            <img class="media-object rounded-circle" src="img/avatar-test6.png"
-                                                 width="35"
-                                                 height="35"
-                                                 data-toggle="popover"
-                                                 data-trigger="hover"
-                                                 data-placement="right"
-                                                 data-content="Быстрая карточка пользователя">
-                                        </a>
-                                        <div class="media-body">
-                                            <p class="media-heading"><a href="query.html">хеджирование валютных
-                                                рисков экспортеров и импортеров</a></p>
-                                            <div>РБК (СПб и ЛО)</div>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td><span class="tag tag-deadline tag-pill">7 часов</span></td>
-                                <td>345(34)</td>
-                                <td>Петербург</td>
-                            </tr>
+                                <div class="col-sm-12 col-md-2 pl-3 hidden-sm-down">
+                                    <span class="tag tag-deadline tag-pill"
+                                          data-toggle="tooltip"
+                                          data-placement="left"
+                                          data-trigger="hover"
+                                          title="Время до дедлайна">7 часов</span>
+                                </div>
 
-                            <tr>
-                                <td><a href="#"><i class="material-icons">star_border</i></a></td>
-                                <td scope="row">
-                                    <div class="media">
-                                        <a class="media-left float-xs-none" href="#">
-                                            <img class="media-object rounded-circle" src="img/avatar-test6.png"
-                                                 width="35"
-                                                 height="35"
-                                                 data-toggle="popover"
-                                                 data-trigger="hover"
-                                                 data-placement="right"
-                                                 data-content="Быстрая карточка пользователя">
-                                        </a>
-                                        <div class="media-body">
-                                            <p class="media-heading"><a href="query.html">хеджирование валютных
-                                                рисков экспортеров и импортеров</a></p>
-                                            <div>РБК (СПб и ЛО)</div>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td><span class="tag tag-deadline tag-pill">7 часов</span></td>
-                                <td>345(34)</td>
-                                <td>Петербург</td>
-                            </tr>
+                            </div>
 
-                            </tbody>
-
-                        </table>
+                        </div>
 
                     </div>
 
                 </div>
-                <!-- End of All Queries -->
 
                 <!-- My Queries -->
                 <div class="tab-pane" id="my-queries">
