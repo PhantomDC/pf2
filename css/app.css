@@ -5534,6 +5534,43 @@ input[type="search"]::-webkit-search-cancel-button {
 [class*="card-outline-"] {
   box-shadow: none; }
 
+.card.media-closed h4, .card.company-closed h4, .card.media-closed p, .card.company-closed p, .card.media-closed div, .card.company-closed div, .card.media-closed i, .card.company-closed i, .card.media-closed a, .card.company-closed a {
+  opacity: 0.5; }
+
+.card.media-closed div:last-child, .card.company-closed div:last-child {
+  visibility: hidden; }
+
+.card.media-closed:after, .card.company-closed:after {
+  content: "СМИ закрыто";
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+  background-color: #ffe300;
+  padding: .2rem .5rem;
+  border-radius: 0.26rem;
+  font-size: 0.75rem;
+  font-weight: 500; }
+
+.card.company-closed:after {
+  content: "Компания закрыта"; }
+
+.card.media-closed-page:after {
+  content: "СМИ закрыто";
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  background-color: #ffe300;
+  padding: .2rem .5rem;
+  border-radius: 0.26rem;
+  font-size: 0.75rem;
+  font-weight: 500; }
+
+.card.media-closed-page .card-block {
+  opacity: 0.7; }
+
+.card.media-closed-page .card-footer {
+  display: none; }
+
 @media (max-width: 991px) {
   .sidebar.card {
     background: white;
