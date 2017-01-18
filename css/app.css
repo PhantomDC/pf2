@@ -6007,6 +6007,21 @@ input[type="search"]::-webkit-search-cancel-button {
     -ms-flex-direction: column;
         flex-direction: column; }
 
+.loader {
+  display: inline-block;
+  border: 0.2rem solid #ddd;
+  border-top: 0.2rem solid #304ffe;
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  animation: load 1.2s linear infinite; }
+
+@keyframes load {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
 header {
   position: fixed;
   top: 0;
