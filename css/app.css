@@ -5484,6 +5484,8 @@ select.select-transparent {
 
 .form-group-gen {
   margin-bottom: 2rem; }
+  body.signup .form-group-gen {
+    margin-bottom: 1rem; }
   .form-group-gen label {
     color: #888; }
   .form-group-gen .form-text {
