@@ -46,7 +46,7 @@ https://fkolesnik.github.io/pf2/
 11. Профиль эксперта-спикера https://fkolesnik.github.io/pf2/profile-speaker.html<br>
 -- еще один статус пользователя наряду с журналистом и экспертом<br>
 -- эксперта-спикера может завести простой эксперт, с тем чтобы потом от лица перовго отвечать журналистам<br>
--- страницу создания профиля эксперта-спикера см. в профиле простого эксперта, пункт "Мои эксперты" в левом меню https://fkolesnik.github.io/pf2/profile-my-speaker.html#profile-set-speaker<br>
+-- страницу создания профиля эксперта-спикера см. в профиле простого эксперта, пункт "Мои эксперты" в левом меню https://fkolesnik.github.io/pf2/profile-my-speaker.html#profile-set-speakers<br>
 -- эксперт-спикер в результатах поиска - см. https://fkolesnik.github.io/pf2/people.html - первый айтем Иван Петров <br>
 
 12. Страница СМИ https://fkolesnik.github.io/pf2/media.html<br>
